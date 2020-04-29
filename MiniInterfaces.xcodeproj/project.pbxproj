@@ -22,6 +22,7 @@
 		DE3558242458EFBE005D7BDB /* Estatisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581E2458EFBE005D7BDB /* Estatisticas.storyboard */; };
 		DE3558252458EFBE005D7BDB /* Momentos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581F2458EFBE005D7BDB /* Momentos.storyboard */; };
 		DE3558262458EFBE005D7BDB /* Ajustes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3558202458EFBE005D7BDB /* Ajustes.storyboard */; };
+		DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE35582F2459BF02005D7BDB /* MomentosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DE35581E2458EFBE005D7BDB /* Estatisticas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Estatisticas.storyboard; sourceTree = "<group>"; };
 		DE35581F2458EFBE005D7BDB /* Momentos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Momentos.storyboard; sourceTree = "<group>"; };
 		DE3558202458EFBE005D7BDB /* Ajustes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ajustes.storyboard; sourceTree = "<group>"; };
+		DE35582F2459BF02005D7BDB /* MomentosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3557F82458EE74005D7BDB /* ViewController.swift */,
+				DE35582F2459BF02005D7BDB /* MomentosController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D908262459A88300F9839C /* FeelingCard.swift in Sources */,
+				DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */,
 				DE3557F92458EE74005D7BDB /* ViewController.swift in Sources */,
 				DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */,
 				03D908252459A88300F9839C /* User.swift in Sources */,
