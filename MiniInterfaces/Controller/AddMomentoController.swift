@@ -12,10 +12,12 @@ import UIKit
 class AddMomentoController: UIViewController {
 
     @IBOutlet weak var largeTitle: UILabel!
+    @IBOutlet weak var navBar: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         largeTitle.font = UIFont(name:"SFRounded-Bold", size: 34.0)
+        
     }
 
 
