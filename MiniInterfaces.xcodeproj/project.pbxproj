@@ -11,6 +11,8 @@
 		03D908242459A88300F9839C /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908202459A88300F9839C /* Contacts.swift */; };
 		03D908252459A88300F9839C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908212459A88300F9839C /* User.swift */; };
 		03D908262459A88300F9839C /* FeelingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908222459A88300F9839C /* FeelingCard.swift */; };
+		03D908282459B8B000F9839C /* colorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908272459B8B000F9839C /* colorsApp.swift */; };
+		03D9082A2459BD3C00F9839C /* AddMomentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908292459BD3C00F9839C /* AddMomentoController.swift */; };
 		DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F42458EE74005D7BDB /* AppDelegate.swift */; };
 		DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F62458EE74005D7BDB /* SceneDelegate.swift */; };
 		DE3557F92458EE74005D7BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F82458EE74005D7BDB /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		03D908202459A88300F9839C /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		03D908212459A88300F9839C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		03D908222459A88300F9839C /* FeelingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingCard.swift; sourceTree = "<group>"; };
+		03D908272459B8B000F9839C /* colorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorsApp.swift; sourceTree = "<group>"; };
+		03D908292459BD3C00F9839C /* AddMomentoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMomentoController.swift; sourceTree = "<group>"; };
 		DE3557F12458EE74005D7BDB /* MiniInterfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniInterfaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3557F42458EE74005D7BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3557F62458EE74005D7BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		DE3557F32458EE74005D7BDB /* MiniInterfaces */ = {
 			isa = PBXGroup;
 			children = (
+				03D908272459B8B000F9839C /* colorsApp.swift */,
 				03D9081E2459A88300F9839C /* Model */,
 				DE35582E2458F171005D7BDB /* Controller */,
 				DE35581A2458EFBE005D7BDB /* View */,
@@ -118,6 +123,7 @@
 			children = (
 				DE3557F82458EE74005D7BDB /* ViewController.swift */,
 				DE35582F2459BF02005D7BDB /* MomentosController.swift */,
+				03D908292459BD3C00F9839C /* AddMomentoController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,8 +208,10 @@
 				DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */,
 				DE3557F92458EE74005D7BDB /* ViewController.swift in Sources */,
 				DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */,
+				03D9082A2459BD3C00F9839C /* AddMomentoController.swift in Sources */,
 				03D908252459A88300F9839C /* User.swift in Sources */,
 				DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */,
+				03D908282459B8B000F9839C /* colorsApp.swift in Sources */,
 				03D908232459A88300F9839C /* Card.swift in Sources */,
 				03D908242459A88300F9839C /* Contacts.swift in Sources */,
 			);
