@@ -6,7 +6,6 @@
 //  Copyright © 2020 Elias Ferreira. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class AddMomentoController: UIViewController {

@@ -28,6 +28,9 @@
                                 <state key="normal" image="plus" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
                                 </state>
+                                <connections>
+                                    <action selector="addMomentoTapped:" destination="P4U-9U-XMP" eventType="touchUpInside" id="wlk-oy-Hs2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

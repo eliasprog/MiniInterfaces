@@ -10,9 +10,18 @@ import UIKit
 
 class MomentosController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func addMomentoTapped(_ sender: UIButton) {
+        
+        if let addMomentoView = storyboard?.instantiateViewController(withIdentifier: "AddMomentoController") {
+            self.present(addMomentoView, animated: true, completion: nil)
+        }
+        
     }
 
 }
