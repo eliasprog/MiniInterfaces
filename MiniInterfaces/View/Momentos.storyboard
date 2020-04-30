@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Momentos Controller-->
+        <!--Meus Momentos-->
         <scene sceneID="lyG-5R-HEq">
             <objects>
                 <viewController id="P4U-9U-XMP" customClass="MomentosController" customModule="MiniInterfaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,14 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meus Momentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o84-GN-BJv">
-                                <rect key="frame" x="16" y="98" width="244" height="40.666666666666657"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meus Momentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o84-GN-BJv">
+                                <rect key="frame" x="16" y="150" width="244" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-8U-li5">
-                                <rect key="frame" x="333" y="106" width="26" height="25.333333333333343"/>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="o84-GN-BJv" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="YHX-Aj-wpq"/>
+                            <constraint firstItem="o84-GN-BJv" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="10" id="dUQ-Ux-vOk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Meus Momentos" largeTitleDisplayMode="always" id="3vp-Uz-SQe">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="RBJ-pI-Mdn">
+                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RYV-8U-li5">
+                                <rect key="frame" x="333" y="9.3333333333333339" width="26" height="25.333333333333329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="tintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="plus" catalog="system">
@@ -32,21 +43,25 @@
                                     <action selector="addMomentoTapped:" destination="P4U-9U-XMP" eventType="touchUpInside" id="wlk-oy-Hs2"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="RYV-8U-li5" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="18" id="Ky7-8R-V20"/>
-                            <constraint firstItem="o84-GN-BJv" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="YHX-Aj-wpq"/>
-                            <constraint firstItem="o84-GN-BJv" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="10" id="dUQ-Ux-vOk"/>
-                            <constraint firstItem="rT9-J3-OfJ" firstAttribute="trailing" secondItem="RYV-8U-li5" secondAttribute="trailing" constant="16" id="nJ8-RO-jt2"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3vp-Uz-SQe"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="1or-7i-c6O" kind="show" identifier="AddMomentoSegue" id="lIr-At-NkF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fkz-76-hTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989.60000000000002" y="47.290640394088669"/>
+        </scene>
+        <!--AddMomentoController-->
+        <scene sceneID="IR9-RC-akL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Add Momento" referencedIdentifier="AddMomentoController" id="1or-7i-c6O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AKu-WB-rZS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhC-Iq-Ucy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="-23"/>
         </scene>
         <!--Momentos-->
         <scene sceneID="89a-kb-x9d">
@@ -55,8 +70,8 @@
                     <tabBarItem key="tabBarItem" title="Momentos" id="uSs-QR-dT0"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iBT-8t-smz">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="iBT-8t-smz">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
