@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03294123245B80A3009AF37F /* FeelingCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */; };
 		03294124245B80A3009AF37F /* FeelingCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03294122245B80A3009AF37F /* FeelingCardCollectionViewCell.xib */; };
+		03294126245C4FB2009AF37F /* fontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03294125245C4FB2009AF37F /* fontStyle.swift */; };
 		03D908232459A88300F9839C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9081F2459A88300F9839C /* Card.swift */; };
 		03D908242459A88300F9839C /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908202459A88300F9839C /* Contacts.swift */; };
 		03D908252459A88300F9839C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908212459A88300F9839C /* User.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		03294122245B80A3009AF37F /* FeelingCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		03294125245C4FB2009AF37F /* fontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontStyle.swift; sourceTree = "<group>"; };
 		03D9081F2459A88300F9839C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		03D908202459A88300F9839C /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		03D908212459A88300F9839C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				03D908272459B8B000F9839C /* colorsApp.swift */,
+				03294125245C4FB2009AF37F /* fontStyle.swift */,
 				03D9081E2459A88300F9839C /* Model */,
 				DE35582E2458F171005D7BDB /* Controller */,
 				DE35581A2458EFBE005D7BDB /* View */,
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03294126245C4FB2009AF37F /* fontStyle.swift in Sources */,
 				03D908262459A88300F9839C /* FeelingCard.swift in Sources */,
 				8889722B2459C998000A9E45 /* ContatosTableViewCell.swift in Sources */,
 				DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */,

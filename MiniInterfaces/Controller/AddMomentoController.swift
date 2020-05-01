@@ -12,6 +12,7 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
 
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var txtLbl: UILabel!
     
     let data: [FeelingCard] = [FeelingCard(color: .green, name: "Radiante"),
     FeelingCard(color: .systemGreen, name: "Bem"),
@@ -26,6 +27,7 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.delegate = self as UICollectionViewDelegate
         collectionView.register(UINib.init(nibName: "FeelingCardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FeelingCard")
         collectionView.backgroundColor = .backgroundColor
+        self.txtLbl.font = sfRounded(size: 28, weight: .medium)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
