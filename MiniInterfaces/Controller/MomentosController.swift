@@ -16,11 +16,9 @@ class MomentosController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addMomentoTapped(_ sender: UIButton) {
+    @IBAction func addMomentoTapped(_ sender: Any) {
         
-        let storyboard = UIStoryboard(name: "Add Momento", bundle: nil)
-        let addMomentoView = storyboard.instantiateViewController(withIdentifier: "AddMomentoController") as! AddMomentoController
-        self.present(addMomentoView, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "AddMomentoSegue", sender: self)
         
     }
 
