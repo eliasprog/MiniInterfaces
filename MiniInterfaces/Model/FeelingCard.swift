@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 struct FeelingCard {
-    let color: String
+    let color: UIColor
     let name: String
     
-    init(color: String, name: String) {
+    init(color: UIColor, name: String) {
         self.color = color
         self.name = name
     }
