@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,24 +16,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meus Momentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o84-GN-BJv">
-                                <rect key="frame" x="16" y="150" width="244" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ir1-Pd-yC6">
+                                <rect key="frame" x="67" y="342" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QQp-vE-oH4">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fH-Af-8pN">
+                                <rect key="frame" x="15.999999999999996" y="156" width="55.666666666666657" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Janeiro">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="SFCompactRounded-Semibold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w61-A6-IoL">
+                                <rect key="frame" x="85" y="206" width="290" height="523"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FGW-4M-dbn">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="abY-Op-2s8">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I8h-qw-Rsw">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZpA-hy-7Z7">
+                                <rect key="frame" x="16" y="192" width="38" height="70.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uB-2w-onC">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="39.666666666666664"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="01">
+                                                <attributes>
+                                                    <font key="NSFont" size="34" name="SFProRounded-Semibold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOh-K2-wfa">
+                                        <rect key="frame" x="0.0" y="51.666666666666657" width="38" height="18.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Jan">
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="SFCompactRounded-Semibold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qOh-K2-wfa" firstAttribute="centerX" secondItem="3uB-2w-onC" secondAttribute="centerX" id="3TW-di-KlJ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="o84-GN-BJv" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="YHX-Aj-wpq"/>
-                            <constraint firstItem="o84-GN-BJv" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="10" id="dUQ-Ux-vOk"/>
+                            <constraint firstItem="ir1-Pd-yC6" firstAttribute="top" secondItem="w61-A6-IoL" secondAttribute="bottom" id="07k-tJ-RJi"/>
+                            <constraint firstItem="0fH-Af-8pN" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="2pN-s0-qh8"/>
+                            <constraint firstItem="ZpA-hy-7Z7" firstAttribute="top" secondItem="0fH-Af-8pN" secondAttribute="bottom" constant="16" id="Ch5-8w-3L7"/>
+                            <constraint firstItem="ZpA-hy-7Z7" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="TEs-kv-Qz3"/>
+                            <constraint firstItem="w61-A6-IoL" firstAttribute="top" secondItem="0fH-Af-8pN" secondAttribute="bottom" constant="16" id="WRN-HU-pfW"/>
+                            <constraint firstItem="w61-A6-IoL" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="85" id="dmw-XK-zCy"/>
+                            <constraint firstItem="rT9-J3-OfJ" firstAttribute="trailing" secondItem="w61-A6-IoL" secondAttribute="trailing" id="gKo-fJ-Gpe"/>
+                            <constraint firstItem="0fH-Af-8pN" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="16" id="jQx-Bj-S4o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Meus Momentos" largeTitleDisplayMode="always" id="3vp-Uz-SQe">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="RBJ-pI-Mdn">
+                    <navigationItem key="navigationItem" title="Meus Momentos" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="3vp-Uz-SQe">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="RBJ-pI-Mdn">
                             <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RYV-8U-li5">
-                                <rect key="frame" x="333" y="9.3333333333333339" width="26" height="25.333333333333329"/>
+                                <rect key="frame" x="333" y="9.3333333333333321" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="tintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,6 +148,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="iBT-8t-smz">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
