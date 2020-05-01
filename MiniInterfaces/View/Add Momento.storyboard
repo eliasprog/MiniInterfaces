@@ -49,6 +49,7 @@
                     <connections>
                         <outlet property="collectionView" destination="ukS-hv-GTk" id="bHU-YB-N4c"/>
                         <outlet property="navBar" destination="Xf7-wF-a39" id="bgQ-8q-Un3"/>
+                        <outlet property="txtLbl" destination="fK3-6d-NBg" id="KW2-1s-9Ux"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wt5-WF-734" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

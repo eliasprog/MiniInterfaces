@@ -16,19 +16,8 @@ class FeelingCardCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.colorView.layer.cornerRadius = 4
-        
-        let fontSize: CGFloat = 15
-        let systemFont = UIFont.systemFont(ofSize: fontSize, weight: .semibold)
-        let roundedFont: UIFont
-        
-        if let descriptor = systemFont.fontDescriptor.withDesign(.rounded) {
-            roundedFont = UIFont(descriptor: descriptor, size: fontSize)
-        }
-        else {
-             roundedFont = systemFont
-        }
-        
-        feelingLbl.font = roundedFont
+       
+        feelingLbl.font = sfRounded(size: 15, weight: .semibold)
         feelingLbl.textColor = .textColor
     }
     
