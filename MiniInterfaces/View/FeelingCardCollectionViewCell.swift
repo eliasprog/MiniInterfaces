@@ -12,6 +12,7 @@ class FeelingCardCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var feelingLbl: UILabel!
+    @IBOutlet weak var backgroundCard: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +20,15 @@ class FeelingCardCollectionViewCell: UICollectionViewCell {
        
         feelingLbl.font = sfRounded(size: 15, weight: .semibold)
         feelingLbl.textColor = .textColor
+        
+        backgroundCard.layer.shadowColor = UIColor.black.cgColor
+        backgroundCard.layer.shadowOpacity = 0.16
+        backgroundCard.layer.shadowRadius = 4
+        backgroundCard.layer.shadowOffset = .init(width: 0, height: 3)
+        
+        self.backgroundColor = .backgroundColor
+        
+        backgroundCard.layer.cornerRadius = 6
     }
     
     func configure(with model: FeelingCard){
