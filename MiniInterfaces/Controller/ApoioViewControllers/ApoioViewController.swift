@@ -10,26 +10,23 @@ import UIKit
 
 class ApoioViewController: UIViewController{
 
+    @IBOutlet weak var msgsApoioCollectionView: UICollectionView!
     @IBOutlet weak var contactsTableView: UITableView!
+    @IBOutlet weak var titleContatosLabel: UILabel!
     
-    var contacts: [Contacts] = []
+    var contacts: [Contacts] = [] //array de contatos para ser usado na table
+    var msgsApoio: [String] = ["Você não está sozinho", "Ligue para o 188", "Oii, você é lindo"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contacts = createArray()
+        titleContatosLabel.textColor = .textColor
+        contacts = createArray() //recebendo o array de contatos criado
         configTable()
-        
-    }
-    private func configTable(){
-        contactsTableView.delegate = self
-        contactsTableView.dataSource = self
-        
-        //Registering Cells
-        let cellNib = UINib(nibName: ContatoTableViewCell.xibName, bundle: nil)
-        contactsTableView.register(cellNib, forCellReuseIdentifier: ContatoTableViewCell.identifier)
+        contactsTableView.tableFooterView = UIView()
+        configCollection()
     }
     
-    func createArray() -> [Contacts]{
+    func createArray() -> [Contacts]{//cria o array de contatos com dados mocados
         var arrayContacts: [Contacts] = []
         
         
@@ -46,11 +43,33 @@ class ApoioViewController: UIViewController{
         
         return arrayContacts
     }
+    
+    private func configTable(){//atribui o delegate e o datasource da table e registra a xib da cell
+        contactsTableView.delegate = self
+        contactsTableView.dataSource = self
+        
+        //Registering Cells
+        let cellNib = UINib(nibName: ContatoTableViewCell.xibName, bundle: nil)
+        contactsTableView.register(cellNib, forCellReuseIdentifier: ContatoTableViewCell.identifier)
+    }
+    
+    private func configCollection(){
+        msgsApoioCollectionView.delegate = self
+        msgsApoioCollectionView.dataSource = self
+        
+        //RegisteringNib
+        let cellNib = UINib(nibName: MsgApoioCollectionViewCell.xibName, bundle: nil)
+        msgsApoioCollectionView.register(cellNib, forCellWithReuseIdentifier: MsgApoioCollectionViewCell.identifier)
+//        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: 311, height: 151
+//        layout.scrollDirection = .horizontal
+//        msgsApoioCollectionView.collectionViewLayout = layout
+    }
 
 }
 extension ApoioViewController: UITableViewDataSource, UITableViewDelegate{
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {//metodo para o definir o número de linhas da table
         contacts.count
     }
     
@@ -65,10 +84,31 @@ extension ApoioViewController: UITableViewDataSource, UITableViewDelegate{
         
         cell.configCell(with: contact)
         cell.selectionStyle = .none
-        
         return cell
     }
     
 
 }
+
+extension ApoioViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        msgsApoio.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let msg = msgsApoio[indexPath.row]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MsgApoioCollectionViewCell.identifier, for: indexPath) as? MsgApoioCollectionViewCell
+            else{
+                fatalError("wrong identifier")
+            }
+        
+        cell.backgroundColor = .primaryColor
+        //cell.layer.cornerRadius = 10.0
+        
+        
+        cell.msgTextView.text = msg
+        return cell
+    }
+}
+
 

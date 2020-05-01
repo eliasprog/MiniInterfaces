@@ -24,13 +24,12 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdu-o6-bcM">
-                    <rect key="frame" x="244" y="17" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSd-6I-cwv">
-                    <rect key="frame" x="313" y="17" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSd-6I-cwv">
+                    <rect key="frame" x="319" y="21" width="34" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Q2p-cd-ojc"/>
+                    </constraints>
+                    <state key="normal" image="phone.fill" catalog="system"/>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAp-rW-MZS">
                     <rect key="frame" x="16" y="8" width="48" height="49"/>
@@ -38,22 +37,29 @@
                         <constraint firstAttribute="width" constant="48" id="RvC-zc-Dek"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdu-o6-bcM">
+                    <rect key="frame" x="241" y="15" width="86" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="pbn-bl-ChN"/>
+                    </constraints>
+                    <state key="normal" image="message.fill" catalog="system"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="mdu-o6-bcM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="20e-om-CVM"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="centerY" secondItem="iSd-6I-cwv" secondAttribute="centerY" id="5gh-gV-m8C"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="top" secondItem="ssb-UF-TSg" secondAttribute="top" id="FTM-8N-bB5"/>
+                <constraint firstItem="iSd-6I-cwv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="GQw-jn-IVg"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LBK-fx-4mR"/>
-                <constraint firstItem="iSd-6I-cwv" firstAttribute="leading" secondItem="mdu-o6-bcM" secondAttribute="trailing" constant="23" id="W15-F8-ase"/>
+                <constraint firstItem="mdu-o6-bcM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="PeY-wo-XSE"/>
                 <constraint firstItem="ssb-UF-TSg" firstAttribute="leading" secondItem="SAp-rW-MZS" secondAttribute="trailing" constant="18" id="bzs-BP-rfw"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="centerY" secondItem="mdu-o6-bcM" secondAttribute="centerY" id="fGi-fc-LWQ"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="fcy-Bz-mvW"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="bottom" secondItem="JlB-sL-8er" secondAttribute="bottom" id="gkP-JG-DVE"/>
                 <constraint firstItem="SAp-rW-MZS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="iWt-hq-lGa"/>
-                <constraint firstAttribute="trailing" secondItem="mdu-o6-bcM" secondAttribute="trailing" constant="85" id="iq0-Tb-ydQ"/>
+                <constraint firstAttribute="trailing" secondItem="mdu-o6-bcM" secondAttribute="trailing" constant="48" id="jni-3C-jW0"/>
+                <constraint firstAttribute="trailing" secondItem="iSd-6I-cwv" secondAttribute="trailing" constant="22" id="nva-kb-6uQ"/>
                 <constraint firstItem="JlB-sL-8er" firstAttribute="leading" secondItem="ssb-UF-TSg" secondAttribute="leading" id="y4o-hi-Q4S"/>
-                <constraint firstItem="mdu-o6-bcM" firstAttribute="top" secondItem="iSd-6I-cwv" secondAttribute="top" id="zSM-ce-Ef8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -63,7 +69,11 @@
                 <outlet property="nameLabel" destination="JlB-sL-8er" id="Bv2-hT-Tea"/>
                 <outlet property="photoImageView" destination="SAp-rW-MZS" id="UiR-KG-rcm"/>
             </connections>
-            <point key="canvasLocation" x="31" y="4"/>
+            <point key="canvasLocation" x="29.710144927536234" y="3.683035714285714"/>
         </view>
     </objects>
+    <resources>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="phone.fill" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
