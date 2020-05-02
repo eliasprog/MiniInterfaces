@@ -19,9 +19,9 @@ class MsgApoioCollectionViewCell: UICollectionViewCell {
     
     
     override func awakeFromNib() {
-        super.awakeFromNib()
-        msgTextView.layer.cornerRadius = 10
-        msgTextView.textColor = .textColor
+        super.awakeFromNib()        
+        msgTextView.font = sfRounded(size: 20, weight: .semibold)
+        msgTextView.textColor = .white
         msgTextView.backgroundColor = .primaryColor
     }
 }

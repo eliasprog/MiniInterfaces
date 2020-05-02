@@ -18,13 +18,13 @@
 		03D9082A2459BD3C00F9839C /* AddMomentoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D908292459BD3C00F9839C /* AddMomentoController.swift */; };
 		8863462F245B17B600149659 /* MsgApoioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8863462D245B17B600149659 /* MsgApoioCollectionViewCell.swift */; };
 		88634632245B1ADD00149659 /* MsgApoioXibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88634631245B1ADD00149659 /* MsgApoioXibs.xib */; };
+		88634634245CB52B00149659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88634633245CB52B00149659 /* Assets.xcassets */; };
 		888972252459BE30000A9E45 /* ApoioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888972242459BE30000A9E45 /* ApoioViewController.swift */; };
 		8889722B2459C998000A9E45 /* ContatosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888972292459C998000A9E45 /* ContatosTableViewCell.swift */; };
 		88E3F42B245A38BF00C4BB85 /* ContatoXibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */; };
 		DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F42458EE74005D7BDB /* AppDelegate.swift */; };
 		DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F62458EE74005D7BDB /* SceneDelegate.swift */; };
 		DE3557F92458EE74005D7BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F82458EE74005D7BDB /* ViewController.swift */; };
-		DE3557FE2458EE76005D7BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3557FD2458EE76005D7BDB /* Assets.xcassets */; };
 		DE3558012458EE76005D7BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3557FF2458EE76005D7BDB /* LaunchScreen.storyboard */; };
 		DE3558212458EFBE005D7BDB /* Add Momento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */; };
 		DE3558222458EFBE005D7BDB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581C2458EFBE005D7BDB /* TabBar.storyboard */; };
@@ -47,6 +47,7 @@
 		03D908292459BD3C00F9839C /* AddMomentoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMomentoController.swift; sourceTree = "<group>"; };
 		8863462D245B17B600149659 /* MsgApoioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgApoioCollectionViewCell.swift; sourceTree = "<group>"; };
 		88634631245B1ADD00149659 /* MsgApoioXibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgApoioXibs.xib; sourceTree = "<group>"; };
+		88634633245CB52B00149659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		888972242459BE30000A9E45 /* ApoioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApoioViewController.swift; sourceTree = "<group>"; };
 		888972292459C998000A9E45 /* ContatosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosTableViewCell.swift; sourceTree = "<group>"; };
 		88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContatoXibs.xib; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		DE3557F42458EE74005D7BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3557F62458EE74005D7BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE3557F82458EE74005D7BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE3557FD2458EE76005D7BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3558002458EE76005D7BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE3558022458EE76005D7BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Add Momento.storyboard"; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 				DE35581A2458EFBE005D7BDB /* View */,
 				DE3557F42458EE74005D7BDB /* AppDelegate.swift */,
 				DE3557F62458EE74005D7BDB /* SceneDelegate.swift */,
-				DE3557FD2458EE76005D7BDB /* Assets.xcassets */,
 				DE3557FF2458EE76005D7BDB /* LaunchScreen.storyboard */,
+				88634633245CB52B00149659 /* Assets.xcassets */,
 				DE3558022458EE76005D7BDB /* Info.plist */,
 			);
 			path = MiniInterfaces;
@@ -228,7 +228,7 @@
 				DE3558252458EFBE005D7BDB /* Momentos.storyboard in Resources */,
 				DE3558262458EFBE005D7BDB /* Ajustes.storyboard in Resources */,
 				DE3558212458EFBE005D7BDB /* Add Momento.storyboard in Resources */,
-				DE3557FE2458EE76005D7BDB /* Assets.xcassets in Resources */,
+				88634634245CB52B00149659 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
