@@ -14,21 +14,14 @@ class CardModel {
         
         var cards = [Card]()
         
-        let fellingCard1 = FeelingCard(
-            color: .normalColor,
-            name: "Normal"
-        )
-        
-        let fellingCard2 = FeelingCard(
-            color: .bemColor,
-            name: "Bem"
-        )
+        let fellingCard1 = FeelingCard(color: .normalColor, name: "Normal")
+        let fellingCard2 = FeelingCard(color: .bemColor, name: "Bem")
         
         let card1 = Card(
             photo: "dog",
             feelingColor: fellingCard1,
             title: "Meu Primeiro Cachorro",
-            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…"
+            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …"
         )
         
         let card2 = Card(
