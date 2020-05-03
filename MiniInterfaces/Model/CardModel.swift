@@ -10,20 +10,37 @@ import Foundation
 
 class CardModel {
     
-    static func getCard() -> Card {
+    static func getCards() -> [Card] {
         
-        let fellingCard = FeelingCard(
+        var cards = [Card]()
+        
+        let fellingCard1 = FeelingCard(
             color: .normalColor,
             name: "Normal"
         )
         
-        let card = Card(
-            photo: "dog-img",
-            feelingColor: fellingCard,
-            title: "Teste",
-            description: "Testando..."
+        let fellingCard2 = FeelingCard(
+            color: .bemColor,
+            name: "Bem"
         )
         
-        return card
+        let card1 = Card(
+            photo: "dog",
+            feelingColor: fellingCard1,
+            title: "Meu Primeiro Cachorro",
+            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…"
+        )
+        
+        let card2 = Card(
+            photo: "dog2",
+            feelingColor: fellingCard2,
+            title: "Meu Segundo Cachorro",
+            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…"
+        )
+        
+        cards.append(card1)
+        cards.append(card2)
+        
+        return cards
     }
 }

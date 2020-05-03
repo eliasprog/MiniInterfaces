@@ -11,6 +11,7 @@ import UIKit
 class CardCollectionViewCell: UICollectionViewCell {
     
     
+    @IBOutlet weak var mainFrame: UIView!
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var feelingView: UIView!
     @IBOutlet weak var cardTitle: UILabel!
@@ -19,6 +20,11 @@ class CardCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         //Initialization code
+        
+        mainFrame.layer.cornerRadius = 10
+        feelingView.layer.cornerRadius = 4
+        cardImage.layer.cornerRadius = 10
+
     }
     
     override func prepareForReuse() {

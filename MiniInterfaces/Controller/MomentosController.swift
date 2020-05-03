@@ -12,12 +12,15 @@ class MomentosController: UIViewController {
 
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var cards = [Card]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        cards = CardModel.getCards()
         
         collectionView.register(UINib.init(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardCell")
         
@@ -34,14 +37,14 @@ class MomentosController: UIViewController {
 extension MomentosController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return cards.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
-        cell.congigure(with: CardModel.getCard())
+        cell.congigure(with: cards[indexPath.row])
         
         return cell
     }

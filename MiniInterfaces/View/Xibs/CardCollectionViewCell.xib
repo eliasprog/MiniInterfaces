@@ -10,83 +10,83 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="MiniInterfaces" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="266" height="346"/>
+            <rect key="frame" x="0.0" y="0.0" width="266" height="358"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="266" height="346"/>
+                <rect key="frame" x="0.0" y="0.0" width="266" height="358"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-Cx-BVY">
-                        <rect key="frame" x="0.0" y="0.0" width="266" height="346"/>
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="358"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog-img" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Bj-5lB">
-                                <rect key="frame" x="12" y="12" width="242" height="235"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Bj-5lB">
+                                <rect key="frame" x="10" y="10" width="246" height="246"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="cST-Bj-5lB" secondAttribute="height" multiplier="242:235" id="D1Y-rG-GXo"/>
+                                    <constraint firstAttribute="width" constant="246" id="eLK-4i-VJi"/>
+                                    <constraint firstAttribute="height" constant="246" id="nse-mk-rJn"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULI-ZT-TBg">
-                                <rect key="frame" x="12" y="257" width="22" height="7"/>
+                                <rect key="frame" x="10" y="266" width="22" height="7"/>
                                 <color key="backgroundColor" red="0.94052392240000005" green="0.84087902309999996" blue="0.27240884300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="7" id="fJM-Pe-7Tl"/>
-                                    <constraint firstAttribute="width" constant="22" id="j4G-fL-m9P"/>
+                                    <constraint firstAttribute="width" constant="22" id="7lu-6Q-4dg"/>
+                                    <constraint firstAttribute="height" constant="7" id="jxC-MP-CxB"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-Yt-q7p">
-                                <rect key="frame" x="12" y="298" width="238.5" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="KcR-Hx-1UE"/>
-                                </constraints>
-                                <string key="text">But I must explain to you how all this 
-mistaken idea of denouncing pleasure 
-and praising pain was born and I will…</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Primeiro Cachorro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwV-52-TX7">
+                                <rect key="frame" x="10" y="278" width="165" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Primeiro Cachorro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwV-52-TX7">
-                                <rect key="frame" x="12" y="272" width="165" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-Yt-q7p">
+                                <rect key="frame" x="10" y="301" width="246" height="47"/>
+                                <string key="text">But I must explain to you how all this 
+mistaken idea of denouncing pleasure 
+and praising pain was born and I will…</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="fwV-52-TX7" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="12" id="3a1-I4-l1J"/>
-                            <constraint firstItem="ULI-ZT-TBg" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="12" id="9TK-bm-Des"/>
-                            <constraint firstAttribute="trailing" secondItem="cST-Bj-5lB" secondAttribute="trailing" constant="12" id="Dsy-DB-JcO"/>
-                            <constraint firstItem="fwV-52-TX7" firstAttribute="top" secondItem="ULI-ZT-TBg" secondAttribute="bottom" constant="8" id="M3h-9k-Ec3"/>
-                            <constraint firstItem="ULI-ZT-TBg" firstAttribute="top" secondItem="cST-Bj-5lB" secondAttribute="bottom" constant="10" id="Nhe-C2-nPO"/>
-                            <constraint firstItem="Nj5-Yt-q7p" firstAttribute="top" secondItem="fwV-52-TX7" secondAttribute="bottom" constant="8" id="PAB-SE-Bv1"/>
-                            <constraint firstAttribute="width" constant="266" id="iIR-hF-KWw"/>
-                            <constraint firstItem="Nj5-Yt-q7p" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="12" id="lXv-Ir-9Oz"/>
-                            <constraint firstAttribute="height" constant="346" id="mFo-6V-TYY"/>
-                            <constraint firstItem="cST-Bj-5lB" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="12" id="pRO-PJ-tWN"/>
-                            <constraint firstItem="cST-Bj-5lB" firstAttribute="top" secondItem="Ebp-Cx-BVY" secondAttribute="top" constant="12" id="qPl-x2-2UM"/>
+                            <constraint firstItem="ULI-ZT-TBg" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="10" id="7xz-Mc-4dW"/>
+                            <constraint firstItem="fwV-52-TX7" firstAttribute="top" secondItem="ULI-ZT-TBg" secondAttribute="bottom" constant="5" id="Ahf-Cy-upi"/>
+                            <constraint firstItem="cST-Bj-5lB" firstAttribute="top" secondItem="Ebp-Cx-BVY" secondAttribute="top" constant="10" id="D9l-yl-oD1"/>
+                            <constraint firstItem="fwV-52-TX7" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="10" id="Eqf-IS-bTj"/>
+                            <constraint firstAttribute="trailing" secondItem="cST-Bj-5lB" secondAttribute="trailing" constant="10" id="YFx-kq-lTG"/>
+                            <constraint firstItem="ULI-ZT-TBg" firstAttribute="top" secondItem="cST-Bj-5lB" secondAttribute="bottom" constant="10" id="ZvC-vr-hBf"/>
+                            <constraint firstAttribute="width" constant="266" id="bF3-ew-hyf"/>
+                            <constraint firstAttribute="trailing" secondItem="Nj5-Yt-q7p" secondAttribute="trailing" constant="10" id="dho-or-4kC"/>
+                            <constraint firstItem="cST-Bj-5lB" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="10" id="ifC-Js-15e"/>
+                            <constraint firstAttribute="height" constant="358" id="k4o-CA-cNI"/>
+                            <constraint firstItem="Nj5-Yt-q7p" firstAttribute="top" secondItem="fwV-52-TX7" secondAttribute="bottom" constant="5" id="y1c-hj-7an"/>
+                            <constraint firstItem="Nj5-Yt-q7p" firstAttribute="leading" secondItem="Ebp-Cx-BVY" secondAttribute="leading" constant="10" id="zTH-pj-FCQ"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Ebp-Cx-BVY" secondAttribute="trailing" id="CAS-z1-MHR"/>
-                <constraint firstItem="Ebp-Cx-BVY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FXd-qL-Hvh"/>
-                <constraint firstItem="Ebp-Cx-BVY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iK3-8r-pXq"/>
-                <constraint firstAttribute="bottom" secondItem="Ebp-Cx-BVY" secondAttribute="bottom" id="rmP-gy-y6g"/>
+                <constraint firstAttribute="bottom" secondItem="Ebp-Cx-BVY" secondAttribute="bottom" id="9wb-MG-Bj7"/>
+                <constraint firstItem="Ebp-Cx-BVY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A0e-lL-hPi"/>
+                <constraint firstAttribute="trailing" secondItem="Ebp-Cx-BVY" secondAttribute="trailing" id="GAQ-Pc-DKC"/>
+                <constraint firstItem="Ebp-Cx-BVY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j5K-Gr-QNw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="293" height="446"/>
+            <size key="customSize" width="397" height="633"/>
             <connections>
                 <outlet property="cardImage" destination="cST-Bj-5lB" id="Fxh-Nx-Xuf"/>
                 <outlet property="cardText" destination="Nj5-Yt-q7p" id="jHa-Qj-YUO"/>
                 <outlet property="cardTitle" destination="fwV-52-TX7" id="UX2-kr-ajB"/>
                 <outlet property="feelingView" destination="ULI-ZT-TBg" id="oVH-Co-eAk"/>
+                <outlet property="mainFrame" destination="Ebp-Cx-BVY" id="frP-F0-rIR"/>
             </connections>
-            <point key="canvasLocation" x="-38.405797101449281" y="90.401785714285708"/>
+            <point key="canvasLocation" x="36.231884057971016" y="152.67857142857142"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="dog-img" width="319" height="309"/>
+        <image name="dog" width="246" height="246"/>
     </resources>
 </document>
