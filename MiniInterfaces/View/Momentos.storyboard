@@ -26,28 +26,21 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w61-A6-IoL">
-                                <rect key="frame" x="0.0" y="188" width="375" height="402"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="398" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
+                                <rect key="frame" x="0.0" y="188" width="375" height="624"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="402" id="rK9-R7-WlU"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FGW-4M-dbn">
-                                    <size key="itemSize" width="266" height="368"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yIz-M7-LSS" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" id="18d-gp-dFU"/>
                             <constraint firstItem="0fH-Af-8pN" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="2pN-s0-qh8"/>
-                            <constraint firstItem="w61-A6-IoL" firstAttribute="trailing" secondItem="rT9-J3-OfJ" secondAttribute="trailing" id="WYB-UT-5nK"/>
+                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="0fH-Af-8pN" secondAttribute="bottom" constant="12" id="7QG-KT-ZgR"/>
+                            <constraint firstItem="rT9-J3-OfJ" firstAttribute="trailing" secondItem="yIz-M7-LSS" secondAttribute="trailing" id="J2z-C0-luX"/>
+                            <constraint firstAttribute="bottom" secondItem="yIz-M7-LSS" secondAttribute="bottom" id="VmF-HG-vg2"/>
                             <constraint firstItem="0fH-Af-8pN" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="16" id="jQx-Bj-S4o"/>
-                            <constraint firstItem="w61-A6-IoL" firstAttribute="top" secondItem="0fH-Af-8pN" secondAttribute="bottom" constant="12" id="spd-eR-Ayj"/>
-                            <constraint firstItem="w61-A6-IoL" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" id="yC2-Yz-cAz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
                     </view>
@@ -68,7 +61,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionView" destination="w61-A6-IoL" id="YY6-tS-9qK"/>
+                        <outlet property="tableView" destination="yIz-M7-LSS" id="dvF-v5-mGU"/>
                         <segue destination="1or-7i-c6O" kind="show" identifier="AddMomentoSegue" id="lIr-At-NkF"/>
                     </connections>
                 </viewController>

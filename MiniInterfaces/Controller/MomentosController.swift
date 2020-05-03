@@ -11,18 +11,18 @@ import UIKit
 class MomentosController: UIViewController {
 
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
+    
     var cards = [Card]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        collectionView.delegate = self
-        collectionView.dataSource = self
+      
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        cards = CardModel.getCards()
-        
-        collectionView.register(UINib.init(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardCell")
+        tableView.register(UINib.init(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: "SectionCell")
         
     }
     
@@ -34,20 +34,19 @@ class MomentosController: UIViewController {
     
 }
 
-extension MomentosController: UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cards.count
+extension MomentosController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        3
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
-        
-        cell.congigure(with: cards[indexPath.row])
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath)
+        //cell.backgroundColor = .clear
         return cell
+        
     }
     
     
 }
+

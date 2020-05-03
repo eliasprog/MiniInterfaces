@@ -35,6 +35,8 @@
 		DE44727C245DEEF60007A1C6 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44727B245DEEF60007A1C6 /* CardCollectionViewCell.swift */; };
 		DE44727E245DF84E0007A1C6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44727D245DF84E0007A1C6 /* CardModel.swift */; };
 		DE447282245DFF310007A1C6 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */; };
+		DE4472AC245F125B0007A1C6 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */; };
+		DE4472AD245F125B0007A1C6 /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		DE44727B245DEEF60007A1C6 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE44727D245DF84E0007A1C6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */,
 				DE44727B245DEEF60007A1C6 /* CardCollectionViewCell.swift */,
 				DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */,
+				DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */,
+				DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4472AD245F125B0007A1C6 /* SectionTableViewCell.xib in Resources */,
 				DE447282245DFF310007A1C6 /* CardCollectionViewCell.xib in Resources */,
 				DE3558222458EFBE005D7BDB /* TabBar.storyboard in Resources */,
 				03294124245B80A3009AF37F /* FeelingCardCollectionViewCell.xib in Resources */,
@@ -269,6 +276,7 @@
 				8863462F245B17B600149659 /* MsgApoioCollectionViewCell.swift in Sources */,
 				03D908282459B8B000F9839C /* colorsApp.swift in Sources */,
 				03D908232459A88300F9839C /* Card.swift in Sources */,
+				DE4472AC245F125B0007A1C6 /* SectionTableViewCell.swift in Sources */,
 				03D908242459A88300F9839C /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
