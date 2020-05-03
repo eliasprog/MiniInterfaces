@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "dog-img.png",
+      "filename" : "dog2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "dog-img@2x.png",
+      "filename" : "dog2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "dog-img@3x.png",
+      "filename" : "dog2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
