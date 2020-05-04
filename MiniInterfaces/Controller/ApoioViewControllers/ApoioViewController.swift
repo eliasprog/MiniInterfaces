@@ -10,16 +10,27 @@ import UIKit
 
 class ApoioViewController: UIViewController{
 
+    @IBOutlet var apoioViewController: UIView!
     @IBOutlet weak var msgsApoioCollectionView: UICollectionView!
     @IBOutlet weak var contactsTableView: UITableView!
     @IBOutlet weak var titleContatosLabel: UILabel!
     
+    @IBOutlet weak var addContactsButton: UIButton!
+
+    
     var contacts: [Contacts] = [] //array de contatos para ser usado na table
-    var msgsApoio: [String] = ["Você não está sozinho", "Ligue para o 188", "Oii, você é lindo"]
+    var msgsApoio: [String] = ["Lembre-se, você não está sozinho, existem pessoas que podem te ajudar", "Você pode conversar com um voluntário do CVV ligando para 188 de todo o território nacional", " A CVV funciona 24 horas todos os dias e de forma gratuita.", "Na CVV você é atendido por um voluntário, com respeitoe anonimato", "Oii, você é lindo"]
+    
+    
+    let cellScalling: CGFloat = 0.6
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        apoioViewController.backgroundColor = .backgroundColor
+        contactsTableView.backgroundColor = .backgroundColor
+        msgsApoioCollectionView.backgroundColor = .backgroundColor
         titleContatosLabel.textColor = .textColor
+        titleContatosLabel.font = sfRounded(size: 28, weight: .semibold)
         contacts = createArray() //recebendo o array de contatos criado
         configTable()
         contactsTableView.tableFooterView = UIView()
@@ -30,20 +41,22 @@ class ApoioViewController: UIViewController{
         var arrayContacts: [Contacts] = []
         
         
-        let contact1 = Contacts(photo: "disque188", name: "188", parents: "Rede de Apoio", number: 188)
+        let contact1 = Contacts(photo: "188", name: "CVV", parents: "Rede de Apoio", number: 188)
         let contact2 = Contacts(photo: "pessoaAleatoria1", name: "Gustavo", parents: "Filho", number: 988888888)
         let contact3 = Contacts(photo: "pessoaAleatoria2", name: "Gregório", parents: "Marido", number: 977777777)
         let contact4 = Contacts(photo: "pessoaAleatoria3", name: "Julia", parents: "Irmã", number: 966666666)
+        let contact5 = Contacts(photo: "", name: "Priscila", parents: "Amiga", number: 955555555)
         
         
         arrayContacts.append(contact1)
         arrayContacts.append(contact2)
         arrayContacts.append(contact3)
         arrayContacts.append(contact4)
+        arrayContacts.append(contact5)
         
         return arrayContacts
     }
-    
+
     private func configTable(){//atribui o delegate e o datasource da table e registra a xib da cell
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
@@ -60,10 +73,6 @@ class ApoioViewController: UIViewController{
         //RegisteringNib
         let cellNib = UINib(nibName: MsgApoioCollectionViewCell.xibName, bundle: nil)
         msgsApoioCollectionView.register(cellNib, forCellWithReuseIdentifier: MsgApoioCollectionViewCell.identifier)
-//        let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: 311, height: 151
-//        layout.scrollDirection = .horizontal
-//        msgsApoioCollectionView.collectionViewLayout = layout
     }
 
 }
@@ -81,7 +90,7 @@ extension ApoioViewController: UITableViewDataSource, UITableViewDelegate{
         else{
             fatalError("wrong identifier")
         }
-        
+        cell.backgroundColor = .backgroundColor
         cell.configCell(with: contact)
         cell.selectionStyle = .none
         return cell
@@ -103,8 +112,7 @@ extension ApoioViewController: UICollectionViewDelegate, UICollectionViewDataSou
             }
         
         cell.backgroundColor = .primaryColor
-        //cell.layer.cornerRadius = 10.0
-        
+        cell.layer.cornerRadius = 10.0
         
         cell.msgTextView.text = msg
         return cell

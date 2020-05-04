@@ -21,9 +21,29 @@ class ContatoTableViewCell: UITableViewCell {
     static let xibName = "ContatoXibs" // Setando o nome da xib
     static let identifier = "contatoCell" // Setando o identificador da cell
     
+    func resizeImage(image:UIImage, toTheSize size:CGSize) -> UIImage{
+        let scale = CGFloat(max(size.width/image.size.width,
+        size.height/image.size.height))
+        let width:CGFloat  = image.size.width * scale
+        let height:CGFloat = image.size.height * scale;
+
+        let rr:CGRect = CGRect( x: 0, y: 0, width: width, height: height);
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0);
+        image.draw(in: rr)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext();
+        return newImage!
+    }
+    
     
     func configCell(with contact: Contacts){ //Funçao para configurar os elementos da ceel, que no caso eu puxo da classe de contatos.
-//        photoImageView.image = UIImage(named: contact.photo)
+        var image = UIImage(named: contact.photo)
+        image = resizeImage(image: image ?? UIImage(named: "semFt")!, toTheSize: CGSize(width: 49, height: 49))
+        photoImageView.image = image
+//        .ScaleToFill
+//        .ScaleAspectFit
+//        .ScaleAspectFill
         familyLabel.text = contact.parents
         nameLabel.text = contact.name
     }
@@ -32,6 +52,7 @@ class ContatoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         familyLabel.textColor = .textColor
         nameLabel.textColor = .textColor
+        photoImageView.layer.cornerRadius = 24.5
         messageButton.imageView?.tintColor = .primaryColor
         callButton.imageView?.tintColor = .primaryColor
     }

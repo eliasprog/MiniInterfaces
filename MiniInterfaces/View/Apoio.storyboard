@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uT7-YS-TcU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uT7-YS-TcU">
                                 <rect key="frame" x="0.0" y="397" width="375" height="332"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -35,7 +34,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contatos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTp-V6-LJn">
-                                <rect key="frame" x="16" y="335" width="137" height="34"/>
+                                <rect key="frame" x="16" y="331" width="137" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="5tj-6u-f5q"/>
                                 </constraints>
@@ -43,50 +42,46 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="568-NK-kBV">
-                                <rect key="frame" x="315" y="339" width="24" height="26"/>
-                                <state key="normal" image="addButton"/>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xcf-LX-DMW">
-                                <rect key="frame" x="0.0" y="115" width="375" height="183"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" id="Xcf-LX-DMW">
+                                <rect key="frame" x="0.0" y="88" width="375" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="30" minimumInteritemSpacing="20" id="Tyj-cH-GMH">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <inset key="scrollIndicatorInsets" minX="30" minY="0.0" maxX="10" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Tyj-cH-GMH">
+                                    <size key="itemSize" width="311" height="151"/>
+                                    <size key="estimatedItemSize" width="311" height="151"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eek-ts-Pgp" customClass="MsgApoioCollectionViewCell" customModule="MiniInterfaces" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XDY-Z5-Vfc">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="568-NK-kBV">
+                                <rect key="frame" x="315" y="335" width="24" height="26"/>
+                                <state key="normal" image="addButton"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="568-NK-kBV" firstAttribute="centerY" secondItem="wTp-V6-LJn" secondAttribute="centerY" id="1PE-cI-V1s"/>
                             <constraint firstItem="uT7-YS-TcU" firstAttribute="leading" secondItem="Xcf-LX-DMW" secondAttribute="leading" id="1wG-XX-ds0"/>
-                            <constraint firstItem="uT7-YS-TcU" firstAttribute="top" secondItem="568-NK-kBV" secondAttribute="bottom" constant="32" id="CLF-ma-h5f"/>
-                            <constraint firstItem="568-NK-kBV" firstAttribute="top" secondItem="Xcf-LX-DMW" secondAttribute="bottom" constant="41" id="EOz-Ov-FO3"/>
+                            <constraint firstItem="uT7-YS-TcU" firstAttribute="top" secondItem="568-NK-kBV" secondAttribute="bottom" constant="36" id="CLF-ma-h5f"/>
+                            <constraint firstItem="568-NK-kBV" firstAttribute="top" secondItem="Xcf-LX-DMW" secondAttribute="bottom" constant="28" id="EOz-Ov-FO3"/>
                             <constraint firstItem="uT7-YS-TcU" firstAttribute="bottom" secondItem="5RQ-d3-pgR" secondAttribute="bottom" id="GNe-o8-zhW"/>
                             <constraint firstItem="wTp-V6-LJn" firstAttribute="leading" secondItem="3Si-8G-WRL" secondAttribute="leadingMargin" id="PUx-EB-wHc"/>
                             <constraint firstItem="5RQ-d3-pgR" firstAttribute="trailing" secondItem="568-NK-kBV" secondAttribute="trailing" constant="36" id="XMi-1E-euX"/>
-                            <constraint firstItem="Xcf-LX-DMW" firstAttribute="top" secondItem="5RQ-d3-pgR" secondAttribute="top" constant="27" id="hft-Nl-giE"/>
+                            <constraint firstItem="Xcf-LX-DMW" firstAttribute="top" secondItem="5RQ-d3-pgR" secondAttribute="top" id="hft-Nl-giE"/>
                             <constraint firstItem="uT7-YS-TcU" firstAttribute="leading" secondItem="5RQ-d3-pgR" secondAttribute="leading" id="hrs-EP-rtz"/>
                             <constraint firstItem="uT7-YS-TcU" firstAttribute="centerX" secondItem="3Si-8G-WRL" secondAttribute="centerX" id="osk-FX-zdy"/>
-                            <constraint firstItem="568-NK-kBV" firstAttribute="top" secondItem="3Si-8G-WRL" secondAttribute="top" constant="339" id="tAf-Az-qwC"/>
+                            <constraint firstItem="568-NK-kBV" firstAttribute="top" secondItem="3Si-8G-WRL" secondAttribute="top" constant="335" id="tAf-Az-qwC"/>
                             <constraint firstItem="uT7-YS-TcU" firstAttribute="trailing" secondItem="Xcf-LX-DMW" secondAttribute="trailing" id="vj3-vI-5Jf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5RQ-d3-pgR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Redes de Apoio" largeTitleDisplayMode="always" id="EL4-sn-zNF"/>
                     <connections>
+                        <outlet property="addContactsButton" destination="568-NK-kBV" id="sSd-pw-pgE"/>
+                        <outlet property="apoioViewController" destination="3Si-8G-WRL" id="9Ba-BC-O99"/>
                         <outlet property="contactsTableView" destination="uT7-YS-TcU" id="Y31-Ic-JAw"/>
                         <outlet property="msgsApoioCollectionView" destination="Xcf-LX-DMW" id="65C-xf-ekX"/>
                         <outlet property="titleContatosLabel" destination="wTp-V6-LJn" id="F2X-aQ-9l7"/>
@@ -106,6 +101,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MG9-SS-h19">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
