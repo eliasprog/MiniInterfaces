@@ -24,6 +24,10 @@ class CardCollectionViewCell: UICollectionViewCell {
         mainFrame.layer.cornerRadius = 10
         feelingView.layer.cornerRadius = 4
         cardImage.layer.cornerRadius = 10
+        
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.16
+        self.layer.shadowOffset = .init(width: 0, height: 3)
 
     }
     
