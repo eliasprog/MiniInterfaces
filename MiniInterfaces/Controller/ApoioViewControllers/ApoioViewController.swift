@@ -10,6 +10,7 @@ import UIKit
 
 class ApoioViewController: UIViewController{
 
+    @IBOutlet var apoioViewController: UIView!
     @IBOutlet weak var msgsApoioCollectionView: UICollectionView!
     @IBOutlet weak var contactsTableView: UITableView!
     @IBOutlet weak var titleContatosLabel: UILabel!
@@ -25,6 +26,9 @@ class ApoioViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        apoioViewController.backgroundColor = .backgroundColor
+        contactsTableView.backgroundColor = .backgroundColor
+        msgsApoioCollectionView.backgroundColor = .backgroundColor
         titleContatosLabel.textColor = .textColor
         titleContatosLabel.font = sfRounded(size: 28, weight: .semibold)
         contacts = createArray() //recebendo o array de contatos criado
@@ -69,10 +73,6 @@ class ApoioViewController: UIViewController{
         //RegisteringNib
         let cellNib = UINib(nibName: MsgApoioCollectionViewCell.xibName, bundle: nil)
         msgsApoioCollectionView.register(cellNib, forCellWithReuseIdentifier: MsgApoioCollectionViewCell.identifier)
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 311, height: 151)
-        layout.scrollDirection = .horizontal
-        msgsApoioCollectionView.collectionViewLayout = layout
     }
 
 }
@@ -90,7 +90,7 @@ extension ApoioViewController: UITableViewDataSource, UITableViewDelegate{
         else{
             fatalError("wrong identifier")
         }
-        
+        cell.backgroundColor = .backgroundColor
         cell.configCell(with: contact)
         cell.selectionStyle = .none
         return cell
