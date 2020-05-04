@@ -14,12 +14,12 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var txtLbl: UILabel!
     
-    let data: [FeelingCard] = [FeelingCard(color: .green, name: "Radiante"),
-    FeelingCard(color: .systemGreen, name: "Bem"),
-    FeelingCard(color: .systemYellow, name: "Normal"),
-    FeelingCard(color: .orange, name: "Mal"),
-    FeelingCard(color: .systemRed, name: "Horrível"),
-    FeelingCard(color: .systemPurple, name: "Ansioso")]
+    let data: [FeelingCard] = [FeelingCard(color: .radianteColor, name: "Radiante"),
+    FeelingCard(color: .bemColor, name: "Bem"),
+    FeelingCard(color: .normalColor, name: "Normal"),
+    FeelingCard(color: .malColor, name: "Mal"),
+    FeelingCard(color: .horrivelColor, name: "Horrível"),
+    FeelingCard(color: .ansiosoColor, name: "Ansioso")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeelingCard", for: indexPath) as! FeelingCardCollectionViewCell
         cell.configure(with: data[indexPath.row])
-        cell.layer.cornerRadius = 6
+        
         
         return cell
     }

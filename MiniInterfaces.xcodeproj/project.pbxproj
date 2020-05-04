@@ -24,7 +24,6 @@
 		88E3F42B245A38BF00C4BB85 /* ContatoXibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */; };
 		DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F42458EE74005D7BDB /* AppDelegate.swift */; };
 		DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F62458EE74005D7BDB /* SceneDelegate.swift */; };
-		DE3557F92458EE74005D7BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F82458EE74005D7BDB /* ViewController.swift */; };
 		DE3558012458EE76005D7BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3557FF2458EE76005D7BDB /* LaunchScreen.storyboard */; };
 		DE3558212458EFBE005D7BDB /* Add Momento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */; };
 		DE3558222458EFBE005D7BDB /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581C2458EFBE005D7BDB /* TabBar.storyboard */; };
@@ -33,6 +32,11 @@
 		DE3558252458EFBE005D7BDB /* Momentos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35581F2458EFBE005D7BDB /* Momentos.storyboard */; };
 		DE3558262458EFBE005D7BDB /* Ajustes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3558202458EFBE005D7BDB /* Ajustes.storyboard */; };
 		DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE35582F2459BF02005D7BDB /* MomentosController.swift */; };
+		DE44727C245DEEF60007A1C6 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44727B245DEEF60007A1C6 /* CardCollectionViewCell.swift */; };
+		DE44727E245DF84E0007A1C6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44727D245DF84E0007A1C6 /* CardModel.swift */; };
+		DE447282245DFF310007A1C6 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */; };
+		DE4472AC245F125B0007A1C6 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */; };
+		DE4472AD245F125B0007A1C6 /* SectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +58,6 @@
 		DE3557F12458EE74005D7BDB /* MiniInterfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniInterfaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3557F42458EE74005D7BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3557F62458EE74005D7BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE3557F82458EE74005D7BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE3558002458EE76005D7BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE3558022458EE76005D7BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Add Momento.storyboard"; sourceTree = "<group>"; };
@@ -64,6 +67,11 @@
 		DE35581F2458EFBE005D7BDB /* Momentos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Momentos.storyboard; sourceTree = "<group>"; };
 		DE3558202458EFBE005D7BDB /* Ajustes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ajustes.storyboard; sourceTree = "<group>"; };
 		DE35582F2459BF02005D7BDB /* MomentosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentosController.swift; sourceTree = "<group>"; };
+		DE44727B245DEEF60007A1C6 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE44727D245DF84E0007A1C6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 				03D908202459A88300F9839C /* Contacts.swift */,
 				03D908212459A88300F9839C /* User.swift */,
 				03D908222459A88300F9839C /* FeelingCard.swift */,
+				DE44727D245DF84E0007A1C6 /* CardModel.swift */,
 			);
 			name = Model;
 			path = MiniInterfaces/Model;
@@ -93,10 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				888972242459BE30000A9E45 /* ApoioViewController.swift */,
+				88634631245B1ADD00149659 /* MsgApoioXibs.xib */,
 				888972292459C998000A9E45 /* ContatosTableViewCell.swift */,
 				88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */,
 				8863462D245B17B600149659 /* MsgApoioCollectionViewCell.swift */,
-				88634631245B1ADD00149659 /* MsgApoioXibs.xib */,
 			);
 			path = ApoioViewControllers;
 			sourceTree = "<group>";
@@ -137,8 +146,7 @@
 		DE35581A2458EFBE005D7BDB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */,
-				03294122245B80A3009AF37F /* FeelingCardCollectionViewCell.xib */,
+				DE447283245E1C230007A1C6 /* Xibs */,
 				DE35581C2458EFBE005D7BDB /* TabBar.storyboard */,
 				DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */,
 				DE35581D2458EFBE005D7BDB /* Apoio.storyboard */,
@@ -152,12 +160,24 @@
 		DE35582E2458F171005D7BDB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DE3557F82458EE74005D7BDB /* ViewController.swift */,
 				888972282459C306000A9E45 /* ApoioViewControllers */,
 				DE35582F2459BF02005D7BDB /* MomentosController.swift */,
 				03D908292459BD3C00F9839C /* AddMomentoController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE447283245E1C230007A1C6 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				03294122245B80A3009AF37F /* FeelingCardCollectionViewCell.xib */,
+				03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */,
+				DE44727B245DEEF60007A1C6 /* CardCollectionViewCell.swift */,
+				DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */,
+				DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */,
+				DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4472AD245F125B0007A1C6 /* SectionTableViewCell.xib in Resources */,
+				DE447282245DFF310007A1C6 /* CardCollectionViewCell.xib in Resources */,
 				DE3558222458EFBE005D7BDB /* TabBar.storyboard in Resources */,
 				03294124245B80A3009AF37F /* FeelingCardCollectionViewCell.xib in Resources */,
 				DE3558242458EFBE005D7BDB /* Estatisticas.storyboard in Resources */,
@@ -245,14 +267,16 @@
 				DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */,
 				03294123245B80A3009AF37F /* FeelingCardCollectionViewCell.swift in Sources */,
 				888972252459BE30000A9E45 /* ApoioViewController.swift in Sources */,
+				DE44727E245DF84E0007A1C6 /* CardModel.swift in Sources */,
 				DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */,
-				DE3557F92458EE74005D7BDB /* ViewController.swift in Sources */,
+				DE44727C245DEEF60007A1C6 /* CardCollectionViewCell.swift in Sources */,
 				03D9082A2459BD3C00F9839C /* AddMomentoController.swift in Sources */,
 				03D908252459A88300F9839C /* User.swift in Sources */,
 				DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */,
 				8863462F245B17B600149659 /* MsgApoioCollectionViewCell.swift in Sources */,
 				03D908282459B8B000F9839C /* colorsApp.swift in Sources */,
 				03D908232459A88300F9839C /* Card.swift in Sources */,
+				DE4472AC245F125B0007A1C6 /* SectionTableViewCell.swift in Sources */,
 				03D908242459A88300F9839C /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
