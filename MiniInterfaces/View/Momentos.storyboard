@@ -15,32 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fH-Af-8pN">
-                                <rect key="frame" x="15.999999999999996" y="156" width="55.666666666666657" height="20"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Janeiro">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="SFCompactRounded-Semibold"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="398" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
-                                <rect key="frame" x="0.0" y="188" width="375" height="624"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="418" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
+                                <rect key="frame" x="0.0" y="149" width="375" height="663"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yIz-M7-LSS" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" id="18d-gp-dFU"/>
-                            <constraint firstItem="0fH-Af-8pN" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" constant="16" id="2pN-s0-qh8"/>
-                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="0fH-Af-8pN" secondAttribute="bottom" constant="12" id="7QG-KT-ZgR"/>
                             <constraint firstItem="rT9-J3-OfJ" firstAttribute="trailing" secondItem="yIz-M7-LSS" secondAttribute="trailing" id="J2z-C0-luX"/>
                             <constraint firstAttribute="bottom" secondItem="yIz-M7-LSS" secondAttribute="bottom" id="VmF-HG-vg2"/>
-                            <constraint firstItem="0fH-Af-8pN" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="16" id="jQx-Bj-S4o"/>
+                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="9" id="iHI-Fj-KYy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
                     </view>

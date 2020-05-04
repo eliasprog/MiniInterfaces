@@ -21,14 +21,18 @@ class CardCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         //Initialization code
         
+        cardTitle.font = sfRounded(size: 15, weight: .semibold)
+        cardTitle.textColor = .textColor
+        cardText.font = sfRounded(size: 13, weight: .medium)
+        cardText.textColor = .textColor
+        
         mainFrame.layer.cornerRadius = 10
-        feelingView.layer.cornerRadius = 4
         cardImage.layer.cornerRadius = 10
+        feelingView.layer.cornerRadius = 4
         
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.16
         self.layer.shadowOffset = .init(width: 0, height: 3)
-
     }
     
     override func prepareForReuse() {
