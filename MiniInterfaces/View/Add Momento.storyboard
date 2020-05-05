@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,11 +51,12 @@
                         <outlet property="collectionView" destination="ukS-hv-GTk" id="bHU-YB-N4c"/>
                         <outlet property="navBar" destination="Xf7-wF-a39" id="bgQ-8q-Un3"/>
                         <outlet property="txtLbl" destination="fK3-6d-NBg" id="KW2-1s-9Ux"/>
+                        <segue destination="Vwy-bn-g0y" kind="show" identifier="AddMomento2Segue" id="7oN-py-TMv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wt5-WF-734" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930.39999999999998" y="138.91625615763547"/>
+            <point key="canvasLocation" x="889" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="itn-9Q-9wg">
@@ -78,6 +79,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZn-FQ-oUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12" y="138.91625615763547"/>
+        </scene>
+        <!--AddMomento2ViewController-->
+        <scene sceneID="PZ0-A6-PSw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddMomento2" referencedIdentifier="AddMomento2ViewController" id="Vwy-bn-g0y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Ha-Sa-KpF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aos-FT-Dda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-16"/>
         </scene>
     </scenes>
 </document>
