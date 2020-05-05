@@ -30,15 +30,22 @@ class SectionTableViewCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        cards = CardModel.getCards()
-        
         collectionView.register(UINib.init(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardCell")
+    }
+    
+    func configure(cardStruct: CardsStruct) {
+        
+        self.dayLabel.text = cardStruct.day
+        self.monthLabel.text = cardStruct.month
+        self.cards = cardStruct.cards
+        
     }
 
 }
 
 extension SectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return cards.count
     }
     
@@ -46,7 +53,7 @@ extension SectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
     
-        cell.congigure(with: cards[indexPath.row])
+        cell.configure(with: cards[indexPath.row])
         
         return cell
     }

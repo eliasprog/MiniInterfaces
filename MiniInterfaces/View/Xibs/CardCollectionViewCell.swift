@@ -42,7 +42,7 @@ class CardCollectionViewCell: UICollectionViewCell {
         cardText.text = ""
     }
     
-    func congigure(with card: Card) {
+    func configure(with card: Card) {
         cardImage.image = UIImage(named: card.photo)
         feelingView.backgroundColor = card.feelingColor.color
         cardTitle.text = card.title

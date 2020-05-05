@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="418" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
-                                <rect key="frame" x="0.0" y="149" width="375" height="663"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="402" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
+                                <rect key="frame" x="0.0" y="145" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,7 +28,7 @@
                             <constraint firstItem="yIz-M7-LSS" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" id="18d-gp-dFU"/>
                             <constraint firstItem="rT9-J3-OfJ" firstAttribute="trailing" secondItem="yIz-M7-LSS" secondAttribute="trailing" id="J2z-C0-luX"/>
                             <constraint firstAttribute="bottom" secondItem="yIz-M7-LSS" secondAttribute="bottom" id="VmF-HG-vg2"/>
-                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="9" id="iHI-Fj-KYy"/>
+                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="5" id="iHI-Fj-KYy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
                     </view>
