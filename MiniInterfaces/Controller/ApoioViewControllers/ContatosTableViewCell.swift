@@ -11,6 +11,8 @@ import UIKit
 class ContatoTableViewCell: UITableViewCell {
 
 // Elementos da cell
+    @IBOutlet weak var backgView: UIView!
+    @IBOutlet weak var spaceBackView: UIView!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var familyLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -38,25 +40,24 @@ class ContatoTableViewCell: UITableViewCell {
     
     
     func configCell(with contact: Contacts){ //Funçao para configurar os elementos da ceel, que no caso eu puxo da classe de contatos.
-        var image = UIImage(named: contact.photo)
-        image = resizeImage(image: image ?? UIImage(named: "semFt")!, toTheSize: CGSize(width: 49, height: 49))
-        photoImageView.image = image
-//        .ScaleToFill
-//        .ScaleAspectFit
-//        .ScaleAspectFill
+        photoImageView.image = UIImage(named: contact.photo)
         familyLabel.text = contact.parents
         nameLabel.text = contact.name
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        familyLabel.textColor = .textColor
+        spaceBackView.backgroundColor = .backgroundColor
+        familyLabel.font = sfRounded(size: 14, weight: .medium)
+        nameLabel.font = sfRounded(size: 18, weight: .medium)
         nameLabel.textColor = .textColor
-        photoImageView.layer.cornerRadius = 24.5
         messageButton.imageView?.tintColor = .primaryColor
         callButton.imageView?.tintColor = .primaryColor
     }
     
-
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        photoImageView.layer.cornerRadius = photoImageView.frame.size.width / 2
+    }
     
 }

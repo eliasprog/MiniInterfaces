@@ -26,6 +26,10 @@ class ApoioViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Solve bug
+        self.view.insertSubview(UIView(frame: .zero), at: 0)
+    self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.textColor, .font: sfRounded(size: 34, weight: .semibold)]
         apoioViewController.backgroundColor = .backgroundColor
         contactsTableView.backgroundColor = .backgroundColor
         msgsApoioCollectionView.backgroundColor = .backgroundColor
@@ -33,7 +37,6 @@ class ApoioViewController: UIViewController{
         titleContatosLabel.font = sfRounded(size: 28, weight: .semibold)
         contacts = createArray() //recebendo o array de contatos criado
         configTable()
-        contactsTableView.tableFooterView = UIView()
         configCollection()
     }
     
@@ -42,10 +45,10 @@ class ApoioViewController: UIViewController{
         
         
         let contact1 = Contacts(photo: "188", name: "CVV", parents: "Rede de Apoio", number: 188)
-        let contact2 = Contacts(photo: "pessoaAleatoria1", name: "Gustavo", parents: "Filho", number: 988888888)
-        let contact3 = Contacts(photo: "pessoaAleatoria2", name: "Gregório", parents: "Marido", number: 977777777)
-        let contact4 = Contacts(photo: "pessoaAleatoria3", name: "Julia", parents: "Irmã", number: 966666666)
-        let contact5 = Contacts(photo: "", name: "Priscila", parents: "Amiga", number: 955555555)
+        let contact2 = Contacts(photo: "pessoaAleatoria1", name: "Bruna", parents: "Filha", number: 988888888)
+        let contact3 = Contacts(photo: "pessoaAleatoria4", name: "Gregório", parents: "Marido", number: 977777777)
+        let contact4 = Contacts(photo: "pessoaAleatoria2", name: "Julia", parents: "Irmã", number: 966666666)
+        let contact5 = Contacts(photo: "semFt", name: "Priscila", parents: "Amiga", number: 955555555)
         
         
         arrayContacts.append(contact1)
@@ -92,7 +95,6 @@ extension ApoioViewController: UITableViewDataSource, UITableViewDelegate{
         }
         cell.backgroundColor = .backgroundColor
         cell.configCell(with: contact)
-        cell.selectionStyle = .none
         return cell
     }
     
@@ -117,6 +119,7 @@ extension ApoioViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.msgTextView.text = msg
         return cell
     }
+    
 }
 
 

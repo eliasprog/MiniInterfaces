@@ -90,9 +90,9 @@
 			children = (
 				03D9081F2459A88300F9839C /* Card.swift */,
 				03D908202459A88300F9839C /* Contacts.swift */,
-				03D908212459A88300F9839C /* User.swift */,
 				03D908222459A88300F9839C /* FeelingCard.swift */,
 				DE44727D245DF84E0007A1C6 /* CardModel.swift */,
+				03D908212459A88300F9839C /* User.swift */,
 			);
 			name = Model;
 			path = MiniInterfaces/Model;
@@ -102,10 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				888972242459BE30000A9E45 /* ApoioViewController.swift */,
-				88634631245B1ADD00149659 /* MsgApoioXibs.xib */,
 				888972292459C998000A9E45 /* ContatosTableViewCell.swift */,
 				88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */,
 				8863462D245B17B600149659 /* MsgApoioCollectionViewCell.swift */,
+				88634631245B1ADD00149659 /* MsgApoioXibs.xib */,
 			);
 			path = ApoioViewControllers;
 			sourceTree = "<group>";
