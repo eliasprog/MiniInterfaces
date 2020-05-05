@@ -13,7 +13,7 @@ class MomentosController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var cards = [Card]()
+    var allCards = [CardsStruct]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,10 @@ class MomentosController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        allCards = CardModel.getAllCards()
+        
+        
         
         tableView.register(UINib.init(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: "SectionCell")
     }
@@ -45,13 +49,15 @@ class MomentosController: UIViewController {
 
 extension MomentosController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        return allCards.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath)
-        //cell.backgroundColor = .clear
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCell", for: indexPath) as! SectionTableViewCell
+        
+        cell.configure(cardStruct: allCards[indexPath.row])
+        
         return cell
         
     }

@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="418" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
-                                <rect key="frame" x="0.0" y="149" width="375" height="663"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="402" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIz-M7-LSS">
+                                <rect key="frame" x="0.0" y="145" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,19 +28,19 @@
                             <constraint firstItem="yIz-M7-LSS" firstAttribute="leading" secondItem="rT9-J3-OfJ" secondAttribute="leading" id="18d-gp-dFU"/>
                             <constraint firstItem="rT9-J3-OfJ" firstAttribute="trailing" secondItem="yIz-M7-LSS" secondAttribute="trailing" id="J2z-C0-luX"/>
                             <constraint firstAttribute="bottom" secondItem="yIz-M7-LSS" secondAttribute="bottom" id="VmF-HG-vg2"/>
-                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="9" id="iHI-Fj-KYy"/>
+                            <constraint firstItem="yIz-M7-LSS" firstAttribute="top" secondItem="rT9-J3-OfJ" secondAttribute="top" constant="5" id="iHI-Fj-KYy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rT9-J3-OfJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Meus Momentos" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="3vp-Uz-SQe">
+                        <barButtonItem key="backBarButtonItem" title="Meus Momentos" id="GxV-0j-kkz"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="RBJ-pI-Mdn">
                             <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RYV-8U-li5">
-                                <rect key="frame" x="333" y="9.3333333333333339" width="26" height="25.333333333333329"/>
+                                <rect key="frame" x="335" y="9" width="24" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="tintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="plus" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="medium" weight="semibold"/>
+                                <state key="normal" image="addButton">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="medium" weight="semibold"/>
                                 </state>
                                 <connections>
                                     <action selector="addMomentoTapped:" destination="P4U-9U-XMP" eventType="touchUpInside" id="wlk-oy-Hs2"/>
@@ -71,12 +71,15 @@
         <scene sceneID="89a-kb-x9d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61y-a7-mm3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Momentos" id="uSs-QR-dT0"/>
+                    <tabBarItem key="tabBarItem" title="Momentos" image="momentosIcon" selectedImage="momentosIcon" id="uSs-QR-dT0">
+                        <color key="badgeColor" red="0.50980392159999999" green="0.46274509800000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="iBT-8t-smz">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.50980392159999999" green="0.46274509800000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         </textAttributes>
@@ -92,6 +95,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="addButton" width="24" height="26"/>
+        <image name="momentosIcon" width="16" height="21.333333969116211"/>
     </resources>
 </document>
