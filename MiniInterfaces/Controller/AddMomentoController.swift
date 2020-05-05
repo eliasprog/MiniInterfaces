@@ -27,7 +27,13 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.delegate = self as UICollectionViewDelegate
         collectionView.register(UINib.init(nibName: "FeelingCardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FeelingCard")
         collectionView.backgroundColor = .backgroundColor
+        
         self.txtLbl.font = sfRounded(size: 28, weight: .medium)
+        self.txtLbl.textColor = .textColor
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.textColor, .font: sfRounded(size: 34, weight: .semibold)]
+        
+        self.tabBarController?.tabBar.isHidden = true
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,8 +44,34 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeelingCard", for: indexPath) as! FeelingCardCollectionViewCell
         cell.configure(with: data[indexPath.row])
         
-        
         return cell
+    }
+    
+    var selectedCell: FeelingCardCollectionViewCell? = nil
+    var previousSelectedCell: FeelingCardCollectionViewCell? = nil
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! FeelingCardCollectionViewCell
+        print(indexPath.item)
+        
+        if selectedCell != previousSelectedCell {
+            self.previousSelectedCell = selectedCell
+            self.selectedCell = cell
+            
+            UIView.animate(withDuration: 0.4, animations: {
+                self.previousSelectedCell!.layer.setAffineTransform(CGAffineTransform(rotationAngle: 0))
+            })
+        }
+        
+        self.selectedCell = cell
+        UIView.animate(withDuration: 0.4, animations: {
+            self.selectedCell?.layer.setAffineTransform(CGAffineTransform(rotationAngle: 0.087))
+
+        })
+        self.performSegue(withIdentifier: "AddMomento2Segue", sender: self)
+
+        
+        
     }
     
 

@@ -10,14 +10,14 @@
         <!--addMomento2-->
         <scene sceneID="axw-2Z-fGm">
             <objects>
-                <viewController title="addMomento2" id="h2L-fB-eMY" customClass="AddMomentos2ViewController" customModule="MiniInterfaces" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddMomento2ViewController" title="addMomento2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h2L-fB-eMY" customClass="AddMomento2ViewController" customModule="MiniInterfaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rYH-Eb-1o9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="dzY-SB-BIh"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JNu-SL-nz5"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="JNu-SL-nz5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bmo-nH-YNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

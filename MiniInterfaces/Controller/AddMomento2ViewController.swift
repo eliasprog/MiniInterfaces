@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddMomentos2ViewController: UIViewController {
+class AddMomento2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
