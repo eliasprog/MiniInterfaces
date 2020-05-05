@@ -150,8 +150,8 @@
 		DE35581A2458EFBE005D7BDB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				031A43832460FA2C00DBA93C /* AddMomento2.storyboard */,
 				DE447283245E1C230007A1C6 /* Xibs */,
+				031A43832460FA2C00DBA93C /* AddMomento2.storyboard */,
 				DE35581C2458EFBE005D7BDB /* TabBar.storyboard */,
 				DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */,
 				DE35581D2458EFBE005D7BDB /* Apoio.storyboard */,
