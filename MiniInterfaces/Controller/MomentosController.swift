@@ -17,14 +17,23 @@ class MomentosController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-      
+        
+        self.view.insertSubview(UIView(frame: .zero), at: 0)
+        
+        self.navigationController?.navigationBar.largeTitleTextAttributes =
+        [NSAttributedString.Key.foregroundColor:UIColor.textColor,
+         NSAttributedString.Key.font: sfRounded(size: 34, weight: .semibold)]
+        
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(UINib.init(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: "SectionCell")
-        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+
     
     @IBAction func addMomentoTapped(_ sender: Any) {
         

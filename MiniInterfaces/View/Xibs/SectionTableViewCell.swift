@@ -11,14 +11,21 @@ import UIKit
 class SectionTableViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var cards = [Card]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         self.backgroundColor = .clear
+        
+        dayLabel.font = sfRounded(size: 34, weight: .semibold)
+        dayLabel.textColor = .textColor
+        monthLabel.font = sfRounded(size: 16, weight: .semibold)
+        monthLabel.textColor = .textColor
         
         collectionView.delegate = self
         collectionView.dataSource = self

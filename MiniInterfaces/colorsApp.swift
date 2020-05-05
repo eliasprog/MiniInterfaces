@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    static let textColor = UIColor(displayP3Red: 66/255, green: 83/255, blue: 94/255, alpha: 1)
+    static let textColor = #colorLiteral(red: 0.2588235294, green: 0.3254901961, blue: 0.368627451, alpha: 1)
     static let backgroundColor = UIColor(displayP3Red: 244/255, green: 245/255, blue: 250/255, alpha: 1)
     static let primaryColor = UIColor(displayP3Red: 130/255, green: 118/255, blue: 246/255, alpha: 1)
     
