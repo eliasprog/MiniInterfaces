@@ -28,6 +28,17 @@
 		888972252459BE30000A9E45 /* ApoioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888972242459BE30000A9E45 /* ApoioViewController.swift */; };
 		8889722B2459C998000A9E45 /* ContatosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888972292459C998000A9E45 /* ContatosTableViewCell.swift */; };
 		88E3F42B245A38BF00C4BB85 /* ContatoXibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */; };
+		D7A723842462084400694A48 /* SistemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A723832462084400694A48 /* SistemaTableViewCell.swift */; };
+		D7A723862462E76600694A48 /* header.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A723852462E76600694A48 /* header.xib */; };
+		D7A723882462E8E200694A48 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A723872462E8E200694A48 /* HeaderView.swift */; };
+		D7E91B802461B51E00CC77BB /* AjustesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E91B7F2461B51E00CC77BB /* AjustesViewController.swift */; };
+		D7E91B822461D9CD00CC77BB /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E91B812461D9CD00CC77BB /* PerfilCell.xib */; };
+		D7E91B842461DED800CC77BB /* LembreteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E91B832461DED800CC77BB /* LembreteCell.xib */; };
+		D7E91B862461E66E00CC77BB /* HorarioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E91B852461E66E00CC77BB /* HorarioCell.xib */; };
+		D7E91B8B2461E9D400CC77BB /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E91B8A2461E9D400CC77BB /* PerfilTableViewCell.swift */; };
+		D7E91B8D2461E9EC00CC77BB /* LembreteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E91B8C2461E9EC00CC77BB /* LembreteTableViewCell.swift */; };
+		D7E91B8F2461EA1400CC77BB /* HorarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E91B8E2461EA1400CC77BB /* HorarioTableViewCell.swift */; };
+		D7E91B912461EA2900CC77BB /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E91B902461EA2900CC77BB /* PickerTableViewCell.swift */; };
 		DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F42458EE74005D7BDB /* AppDelegate.swift */; };
 		DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3557F62458EE74005D7BDB /* SceneDelegate.swift */; };
 		DE3558012458EE76005D7BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3557FF2458EE76005D7BDB /* LaunchScreen.storyboard */; };
@@ -67,6 +78,17 @@
 		888972242459BE30000A9E45 /* ApoioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApoioViewController.swift; sourceTree = "<group>"; };
 		888972292459C998000A9E45 /* ContatosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosTableViewCell.swift; sourceTree = "<group>"; };
 		88E3F42A245A38BF00C4BB85 /* ContatoXibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContatoXibs.xib; sourceTree = "<group>"; };
+		D7A723832462084400694A48 /* SistemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SistemaTableViewCell.swift; sourceTree = "<group>"; };
+		D7A723852462E76600694A48 /* header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = header.xib; sourceTree = "<group>"; };
+		D7A723872462E8E200694A48 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D7E91B7F2461B51E00CC77BB /* AjustesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesViewController.swift; sourceTree = "<group>"; };
+		D7E91B812461D9CD00CC77BB /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
+		D7E91B832461DED800CC77BB /* LembreteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LembreteCell.xib; sourceTree = "<group>"; };
+		D7E91B852461E66E00CC77BB /* HorarioCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorarioCell.xib; sourceTree = "<group>"; };
+		D7E91B8A2461E9D400CC77BB /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
+		D7E91B8C2461E9EC00CC77BB /* LembreteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LembreteTableViewCell.swift; sourceTree = "<group>"; };
+		D7E91B8E2461EA1400CC77BB /* HorarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioTableViewCell.swift; sourceTree = "<group>"; };
+		D7E91B902461EA2900CC77BB /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		DE3557F12458EE74005D7BDB /* MiniInterfaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniInterfaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3557F42458EE74005D7BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3557F62458EE74005D7BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +144,20 @@
 			path = ApoioViewControllers;
 			sourceTree = "<group>";
 		};
+		D7E91B892461E99C00CC77BB /* AjustesViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7E91B7F2461B51E00CC77BB /* AjustesViewController.swift */,
+				D7E91B8A2461E9D400CC77BB /* PerfilTableViewCell.swift */,
+				D7E91B8C2461E9EC00CC77BB /* LembreteTableViewCell.swift */,
+				D7E91B8E2461EA1400CC77BB /* HorarioTableViewCell.swift */,
+				D7E91B902461EA2900CC77BB /* PickerTableViewCell.swift */,
+				D7A723832462084400694A48 /* SistemaTableViewCell.swift */,
+				D7A723872462E8E200694A48 /* HeaderView.swift */,
+			);
+			path = AjustesViewControllers;
+			sourceTree = "<group>";
+		};
 		DE3557E82458EE74005D7BDB = {
 			isa = PBXGroup;
 			children = (
@@ -164,9 +200,9 @@
 				DE35581C2458EFBE005D7BDB /* TabBar.storyboard */,
 				DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */,
 				DE35581D2458EFBE005D7BDB /* Apoio.storyboard */,
-				DE35581E2458EFBE005D7BDB /* Estatisticas.storyboard */,
 				DE35581F2458EFBE005D7BDB /* Momentos.storyboard */,
 				DE3558202458EFBE005D7BDB /* Ajustes.storyboard */,
+				DE35581E2458EFBE005D7BDB /* Estatisticas.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +210,7 @@
 		DE35582E2458F171005D7BDB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D7E91B892461E99C00CC77BB /* AjustesViewControllers */,
 				888972282459C306000A9E45 /* ApoioViewControllers */,
 				DE35582F2459BF02005D7BDB /* MomentosController.swift */,
 				03D908292459BD3C00F9839C /* AddMomentoController.swift */,
@@ -192,6 +229,10 @@
 				DE447280245DFF310007A1C6 /* CardCollectionViewCell.xib */,
 				DE4472AA245F125B0007A1C6 /* SectionTableViewCell.swift */,
 				DE4472AB245F125B0007A1C6 /* SectionTableViewCell.xib */,
+				D7E91B812461D9CD00CC77BB /* PerfilCell.xib */,
+				D7E91B832461DED800CC77BB /* LembreteCell.xib */,
+				D7E91B852461E66E00CC77BB /* HorarioCell.xib */,
+				D7A723852462E76600694A48 /* header.xib */,
 				031A438724619C5400DBA93C /* PhotoCollectionViewCell.swift */,
 				031A438824619C5400DBA93C /* PhotoCollectionViewCell.xib */,
 			);
@@ -256,9 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E91B822461D9CD00CC77BB /* PerfilCell.xib in Resources */,
 				DE4472AD245F125B0007A1C6 /* SectionTableViewCell.xib in Resources */,
 				DE447282245DFF310007A1C6 /* CardCollectionViewCell.xib in Resources */,
 				DE3558222458EFBE005D7BDB /* TabBar.storyboard in Resources */,
+				D7E91B862461E66E00CC77BB /* HorarioCell.xib in Resources */,
 				03294124245B80A3009AF37F /* FeelingCardCollectionViewCell.xib in Resources */,
 				DE3558242458EFBE005D7BDB /* Estatisticas.storyboard in Resources */,
 				88634632245B1ADD00149659 /* MsgApoioXibs.xib in Resources */,
@@ -270,7 +313,9 @@
 				DE3558012458EE76005D7BDB /* LaunchScreen.storyboard in Resources */,
 				DE3558252458EFBE005D7BDB /* Momentos.storyboard in Resources */,
 				DE3558262458EFBE005D7BDB /* Ajustes.storyboard in Resources */,
+				D7E91B842461DED800CC77BB /* LembreteCell.xib in Resources */,
 				DE3558212458EFBE005D7BDB /* Add Momento.storyboard in Resources */,
+				D7A723862462E76600694A48 /* header.xib in Resources */,
 				88634634245CB52B00149659 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,20 +333,27 @@
 				DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */,
 				031A438924619C5400DBA93C /* PhotoCollectionViewCell.swift in Sources */,
 				03294123245B80A3009AF37F /* FeelingCardCollectionViewCell.swift in Sources */,
+				D7E91B8D2461E9EC00CC77BB /* LembreteTableViewCell.swift in Sources */,
 				888972252459BE30000A9E45 /* ApoioViewController.swift in Sources */,
+				D7A723882462E8E200694A48 /* HeaderView.swift in Sources */,
 				DE44727E245DF84E0007A1C6 /* CardModel.swift in Sources */,
 				DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */,
 				031A438E2462E04000DBA93C /* AddMomento3Controller.swift in Sources */,
 				DE44727C245DEEF60007A1C6 /* CardCollectionViewCell.swift in Sources */,
 				03D9082A2459BD3C00F9839C /* AddMomentoController.swift in Sources */,
+				D7E91B802461B51E00CC77BB /* AjustesViewController.swift in Sources */,
 				03D908252459A88300F9839C /* User.swift in Sources */,
+				D7E91B912461EA2900CC77BB /* PickerTableViewCell.swift in Sources */,
 				DE3557F72458EE74005D7BDB /* SceneDelegate.swift in Sources */,
 				031A43862460FA6A00DBA93C /* AddMomento2ViewController.swift in Sources */,
+				D7E91B8F2461EA1400CC77BB /* HorarioTableViewCell.swift in Sources */,
 				8863462F245B17B600149659 /* MsgApoioCollectionViewCell.swift in Sources */,
 				03D908282459B8B000F9839C /* colorsApp.swift in Sources */,
+				D7A723842462084400694A48 /* SistemaTableViewCell.swift in Sources */,
 				03D908232459A88300F9839C /* Card.swift in Sources */,
 				DE4472AC245F125B0007A1C6 /* SectionTableViewCell.swift in Sources */,
 				03D908242459A88300F9839C /* Contacts.swift in Sources */,
+				D7E91B8B2461E9D400CC77BB /* PerfilTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
