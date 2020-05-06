@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LembreteTableViewCell" customModule="MiniInterfaces" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWl-ZP-3cY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembrete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzO-a7-NMR">
+                            <rect key="frame" x="16" y="11" width="73" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqR-pu-Agh">
+                            <rect key="frame" x="310" y="6" width="51" height="31"/>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ZzO-a7-NMR" firstAttribute="leading" secondItem="sWl-ZP-3cY" secondAttribute="leading" constant="16" id="AO0-Le-ZRb"/>
+                        <constraint firstAttribute="trailing" secondItem="cqR-pu-Agh" secondAttribute="trailing" constant="16" id="nhi-RP-CrV"/>
+                        <constraint firstAttribute="bottom" secondItem="ZzO-a7-NMR" secondAttribute="bottom" constant="11" id="w3a-2A-Q73"/>
+                        <constraint firstAttribute="bottom" secondItem="cqR-pu-Agh" secondAttribute="bottom" constant="7" id="x00-0n-sj7"/>
+                        <constraint firstItem="ZzO-a7-NMR" firstAttribute="top" secondItem="sWl-ZP-3cY" secondAttribute="top" constant="11" id="zQh-Ny-cwi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="sWl-ZP-3cY" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="CFY-5m-KKg"/>
+                <constraint firstItem="sWl-ZP-3cY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FGa-0h-VFR"/>
+                <constraint firstItem="sWl-ZP-3cY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GfM-rc-W45"/>
+                <constraint firstItem="sWl-ZP-3cY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aqO-N6-XZi"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lembreteLabel" destination="ZzO-a7-NMR" id="2f6-Kr-m1l"/>
+                <outlet property="switchButton" destination="cqR-pu-Agh" id="xd5-Qz-FC9"/>
+            </connections>
+            <point key="canvasLocation" x="413.768115942029" y="-231.69642857142856"/>
+        </view>
+    </objects>
+</document>
