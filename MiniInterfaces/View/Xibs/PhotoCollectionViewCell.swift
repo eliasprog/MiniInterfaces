@@ -10,14 +10,27 @@ import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var photo: UIView!
+    @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var btnCamera: UIButton!
+    
+    override func prepareForReuse() {
+        photoView.image = nil
+        btnCamera.isHidden = false
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         btnCamera.imageView?.contentMode = .scaleAspectFill
-        photo.layer.cornerRadius = 5
+        photoView.layer.cornerRadius = 5
         
     }
-
+    
+    func configure(photoName: String?) {
+        if let photo = photoName {
+            self.photoView.image = UIImage(imageLiteralResourceName: photo)
+            self.btnCamera.isHidden = true
+            
+        }
+    }
+    
 }
