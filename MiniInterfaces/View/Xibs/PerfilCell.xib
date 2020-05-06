@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PerfilTableViewCell" customModule="MiniInterfaces" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsz-ba-6uc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-QI-hlC">
+                            <rect key="frame" x="132" y="16" width="108" height="108"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="108" id="gaw-TI-CHi"/>
+                                <constraint firstAttribute="width" constant="108" id="ryN-i5-90R"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMF-FV-IY3">
+                            <rect key="frame" x="338" y="16" width="21" height="22"/>
+                            <state key="normal" image="square.and.pencil" catalog="system"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Eduarda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEt-kU-VEy">
+                            <rect key="frame" x="127" y="132" width="113" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="y4V-QI-hlC" firstAttribute="top" secondItem="Qsz-ba-6uc" secondAttribute="top" constant="16" id="13p-bv-Ret"/>
+                        <constraint firstItem="jMF-FV-IY3" firstAttribute="top" secondItem="Qsz-ba-6uc" secondAttribute="top" constant="16" id="1gL-ga-g7T"/>
+                        <constraint firstItem="HEt-kU-VEy" firstAttribute="leading" secondItem="Qsz-ba-6uc" secondAttribute="leading" constant="127" id="GAq-zf-oq7"/>
+                        <constraint firstItem="y4V-QI-hlC" firstAttribute="leading" secondItem="Qsz-ba-6uc" secondAttribute="leading" constant="132" id="GeE-Zt-cvj"/>
+                        <constraint firstAttribute="trailing" secondItem="jMF-FV-IY3" secondAttribute="trailing" constant="16" id="h0i-aF-QAU"/>
+                        <constraint firstItem="HEt-kU-VEy" firstAttribute="top" secondItem="y4V-QI-hlC" secondAttribute="bottom" constant="8" id="rJy-U9-LzA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Qsz-ba-6uc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="26u-sm-alI"/>
+                <constraint firstItem="Qsz-ba-6uc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Cad-Yk-rHM"/>
+                <constraint firstItem="Qsz-ba-6uc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N2T-mu-dh6"/>
+                <constraint firstItem="Qsz-ba-6uc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fS5-6h-aMi"/>
+                <constraint firstItem="Qsz-ba-6uc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="faa-GJ-bYv"/>
+                <constraint firstItem="Qsz-ba-6uc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="is3-tT-EHs"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="editionButton" destination="jMF-FV-IY3" id="znq-Ps-Muy"/>
+                <outlet property="nomeLabel" destination="HEt-kU-VEy" id="hO6-Nw-4xU"/>
+                <outlet property="perfilImage" destination="y4V-QI-hlC" id="mmf-v6-xFs"/>
+            </connections>
+            <point key="canvasLocation" x="-152.89855072463769" y="-141.62946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+    </resources>
+</document>
