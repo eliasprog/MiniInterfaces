@@ -67,8 +67,10 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
         UIView.animate(withDuration: 0.4, animations: {
             self.selectedCell?.layer.setAffineTransform(CGAffineTransform(rotationAngle: 0.087))
 
+        }, completion:  { _ in
+            self.performSegue(withIdentifier: "AddMomento2Segue", sender: self)
         })
-        self.performSegue(withIdentifier: "AddMomento2Segue", sender: self)
+        
 
         
         
