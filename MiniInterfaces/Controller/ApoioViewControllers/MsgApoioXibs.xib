@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,6 +17,7 @@
                     <rect key="frame" x="22" y="8" width="222" height="135"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
+                        <constraint firstAttribute="height" constant="135" id="6Zn-sA-tNf"/>
                         <constraint firstAttribute="width" constant="222" id="gtZ-kP-TQN"/>
                     </constraints>
                     <string key="text">Você não 
@@ -35,6 +36,7 @@ está sozinho, existem pessoas que podem te ajudar</string>
                 <constraint firstItem="qbM-xP-eEy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="22" id="HDq-Ja-v2G"/>
                 <constraint firstItem="qbM-xP-eEy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hfn-fd-chn"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qbM-xP-eEy" secondAttribute="bottom" constant="8" id="r6D-Rm-ebe"/>
+                <constraint firstAttribute="trailing" secondItem="qbM-xP-eEy" secondAttribute="trailing" constant="67" id="sSy-D8-jyb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -42,7 +44,7 @@ está sozinho, existem pessoas que podem te ajudar</string>
             <connections>
                 <outlet property="msgTextView" destination="qbM-xP-eEy" id="bbR-sl-ZWx"/>
             </connections>
-            <point key="canvasLocation" x="97.826086956521749" y="-102.79017857142857"/>
+            <point key="canvasLocation" x="98" y="-111"/>
         </view>
     </objects>
     <resources>
