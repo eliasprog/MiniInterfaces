@@ -73,7 +73,7 @@ class CardModel {
         cards2.append(card4)
         
         let cardsStruct1 = CardsStruct(day: "01", month: "Jan", year: "2020", cards: cards1)
-        let cardsStruct2 = CardsStruct(day: "02", month: "Jan", year: "2020", cards: cards2)
+        let cardsStruct2 = CardsStruct(day: "25", month: "Abr", year: "2020", cards: cards2)
         // Montando struct
         allCards.append(cardsStruct1)
         allCards.append(cardsStruct2)

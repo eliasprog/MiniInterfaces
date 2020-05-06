@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddMomento3Controller-->
+        <scene sceneID="gzt-SS-gK3">
+            <objects>
+                <viewController storyboardIdentifier="AddMomento3Controller" title="AddMomento3Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qsa-uF-EhS" customClass="AddMomento3Controller" customModule="MiniInterfaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7B-tl-vx1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h16-Lb-Zzc">
+                                <rect key="frame" x="0.0" y="180" width="414" height="716"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HgV-DK-OLP">
+                                    <size key="itemSize" width="322" height="428"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h16-Lb-Zzc" firstAttribute="leading" secondItem="BwA-P6-s5C" secondAttribute="leading" id="8WO-5f-8k9"/>
+                            <constraint firstAttribute="bottom" secondItem="h16-Lb-Zzc" secondAttribute="bottom" id="HbC-Lf-OKL"/>
+                            <constraint firstItem="BwA-P6-s5C" firstAttribute="trailing" secondItem="h16-Lb-Zzc" secondAttribute="trailing" id="PY2-ZU-K6K"/>
+                            <constraint firstItem="h16-Lb-Zzc" firstAttribute="top" secondItem="BwA-P6-s5C" secondAttribute="top" constant="40" id="k76-K8-bcT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BwA-P6-s5C"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Momento Criado!" largeTitleDisplayMode="always" id="TdO-QP-y2w">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="u9v-A5-KZG">
+                            <color key="tintColor" red="0.50980392159999999" green="0.46274509800000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="4AQ-Ji-YDa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ERJ-HV-1bq">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Pronto">
+                                    <color key="titleColor" red="0.50980392159999999" green="0.46274509800000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAndClose:" destination="Qsa-uF-EhS" eventType="touchUpInside" id="2bG-z0-ZyO"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="h16-Lb-Zzc" id="ngP-VA-fIO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kay-Cc-pzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155.072463768116" y="1696.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fzp-Iv-t6L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4lP-vF-Di5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BLc-DO-MMS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qsa-uF-EhS" kind="relationship" relationship="rootViewController" id="HsK-Mh-ghH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dt-dH-YfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.92753623188409" y="1696.875"/>
+        </scene>
+    </scenes>
+</document>

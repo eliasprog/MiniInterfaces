@@ -59,5 +59,4 @@ class ContatoTableViewCell: UITableViewCell {
         super.layoutSubviews()
         photoImageView.layer.cornerRadius = photoImageView.frame.size.width / 2
     }
-    
 }

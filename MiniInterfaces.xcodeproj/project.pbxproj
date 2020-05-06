@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		031A43842460FA2C00DBA93C /* AddMomento2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031A43832460FA2C00DBA93C /* AddMomento2.storyboard */; };
 		031A43862460FA6A00DBA93C /* AddMomento2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A43852460FA6A00DBA93C /* AddMomento2ViewController.swift */; };
+		031A438924619C5400DBA93C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A438724619C5400DBA93C /* PhotoCollectionViewCell.swift */; };
+		031A438A24619C5400DBA93C /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 031A438824619C5400DBA93C /* PhotoCollectionViewCell.xib */; };
+		031A438C2462DF6600DBA93C /* AddMomento3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031A438B2462DF6600DBA93C /* AddMomento3.storyboard */; };
+		031A438E2462E04000DBA93C /* AddMomento3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A438D2462E04000DBA93C /* AddMomento3Controller.swift */; };
 		03294123245B80A3009AF37F /* FeelingCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */; };
 		03294124245B80A3009AF37F /* FeelingCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03294122245B80A3009AF37F /* FeelingCardCollectionViewCell.xib */; };
 		03294126245C4FB2009AF37F /* fontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03294125245C4FB2009AF37F /* fontStyle.swift */; };
@@ -55,6 +59,10 @@
 /* Begin PBXFileReference section */
 		031A43832460FA2C00DBA93C /* AddMomento2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = AddMomento2.storyboard; path = MiniInterfaces/Controller/AddMomento2.storyboard; sourceTree = SOURCE_ROOT; };
 		031A43852460FA6A00DBA93C /* AddMomento2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMomento2ViewController.swift; path = MiniInterfaces/Controller/AddMomento2ViewController.swift; sourceTree = SOURCE_ROOT; };
+		031A438724619C5400DBA93C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		031A438824619C5400DBA93C /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		031A438B2462DF6600DBA93C /* AddMomento3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddMomento3.storyboard; sourceTree = "<group>"; };
+		031A438D2462E04000DBA93C /* AddMomento3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMomento3Controller.swift; path = MiniInterfaces/View/AddMomento3Controller.swift; sourceTree = SOURCE_ROOT; };
 		03294121245B80A3009AF37F /* FeelingCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		03294122245B80A3009AF37F /* FeelingCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeelingCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		03294125245C4FB2009AF37F /* fontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontStyle.swift; sourceTree = "<group>"; };
@@ -186,8 +194,9 @@
 		DE35581A2458EFBE005D7BDB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				031A43832460FA2C00DBA93C /* AddMomento2.storyboard */,
 				DE447283245E1C230007A1C6 /* Xibs */,
+				031A43832460FA2C00DBA93C /* AddMomento2.storyboard */,
+				031A438B2462DF6600DBA93C /* AddMomento3.storyboard */,
 				DE35581C2458EFBE005D7BDB /* TabBar.storyboard */,
 				DE35581B2458EFBE005D7BDB /* Add Momento.storyboard */,
 				DE35581D2458EFBE005D7BDB /* Apoio.storyboard */,
@@ -206,6 +215,7 @@
 				DE35582F2459BF02005D7BDB /* MomentosController.swift */,
 				03D908292459BD3C00F9839C /* AddMomentoController.swift */,
 				031A43852460FA6A00DBA93C /* AddMomento2ViewController.swift */,
+				031A438D2462E04000DBA93C /* AddMomento3Controller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +233,8 @@
 				D7E91B832461DED800CC77BB /* LembreteCell.xib */,
 				D7E91B852461E66E00CC77BB /* HorarioCell.xib */,
 				D7A723852462E76600694A48 /* header.xib */,
+				031A438724619C5400DBA93C /* PhotoCollectionViewCell.swift */,
+				031A438824619C5400DBA93C /* PhotoCollectionViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -293,7 +305,9 @@
 				03294124245B80A3009AF37F /* FeelingCardCollectionViewCell.xib in Resources */,
 				DE3558242458EFBE005D7BDB /* Estatisticas.storyboard in Resources */,
 				88634632245B1ADD00149659 /* MsgApoioXibs.xib in Resources */,
+				031A438A24619C5400DBA93C /* PhotoCollectionViewCell.xib in Resources */,
 				DE3558232458EFBE005D7BDB /* Apoio.storyboard in Resources */,
+				031A438C2462DF6600DBA93C /* AddMomento3.storyboard in Resources */,
 				031A43842460FA2C00DBA93C /* AddMomento2.storyboard in Resources */,
 				88E3F42B245A38BF00C4BB85 /* ContatoXibs.xib in Resources */,
 				DE3558012458EE76005D7BDB /* LaunchScreen.storyboard in Resources */,
@@ -317,12 +331,14 @@
 				03D908262459A88300F9839C /* FeelingCard.swift in Sources */,
 				8889722B2459C998000A9E45 /* ContatosTableViewCell.swift in Sources */,
 				DE3557F52458EE74005D7BDB /* AppDelegate.swift in Sources */,
+				031A438924619C5400DBA93C /* PhotoCollectionViewCell.swift in Sources */,
 				03294123245B80A3009AF37F /* FeelingCardCollectionViewCell.swift in Sources */,
 				D7E91B8D2461E9EC00CC77BB /* LembreteTableViewCell.swift in Sources */,
 				888972252459BE30000A9E45 /* ApoioViewController.swift in Sources */,
 				D7A723882462E8E200694A48 /* HeaderView.swift in Sources */,
 				DE44727E245DF84E0007A1C6 /* CardModel.swift in Sources */,
 				DE3558302459BF02005D7BDB /* MomentosController.swift in Sources */,
+				031A438E2462E04000DBA93C /* AddMomento3Controller.swift in Sources */,
 				DE44727C245DEEF60007A1C6 /* CardCollectionViewCell.swift in Sources */,
 				03D9082A2459BD3C00F9839C /* AddMomentoController.swift in Sources */,
 				D7E91B802461B51E00CC77BB /* AjustesViewController.swift in Sources */,
