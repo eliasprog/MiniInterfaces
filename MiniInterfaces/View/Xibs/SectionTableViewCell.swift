@@ -33,12 +33,19 @@ class SectionTableViewCell: UITableViewCell {
         collectionView.register(UINib.init(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardCell")
     }
     
+    override func prepareForReuse() {
+        self.dayLabel.text = ""
+        self.monthLabel.text = ""
+        self.cards = []
+    }
+    
     func configure(cardStruct: CardsStruct) {
         
         self.dayLabel.text = cardStruct.day
         self.monthLabel.text = cardStruct.month
         self.cards = cardStruct.cards
         
+        collectionView.reloadData()
     }
 
 }

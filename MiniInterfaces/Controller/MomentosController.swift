@@ -24,18 +24,19 @@ class MomentosController: UIViewController {
         [NSAttributedString.Key.foregroundColor:UIColor.textColor,
          NSAttributedString.Key.font: sfRounded(size: 34, weight: .semibold)]
         
+        CardModel.loadCards()
+        
         tableView.delegate = self
         tableView.dataSource = self
-        
-        allCards = CardModel.getAllCards()
-        
-        
         
         tableView.register(UINib.init(nibName: "SectionTableViewCell", bundle: nil), forCellReuseIdentifier: "SectionCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+        
+        allCards = CardModel.getAllCards()
+        tableView.reloadData()
     }
 
     
