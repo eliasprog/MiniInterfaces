@@ -66,7 +66,7 @@ class CardModel {
                 photo: "dog",
                 feelingColor: feelingBem,
                 title: "Meu Segundo Cachorro",
-                description: "A experiência de cria um pet está sendo tão incrível que hoje eu decidi adotar meu segundo cahorro, o nome dele é Lion e ele está se dando muito bem com seu coleguinha Rex!",
+                description: "A experiência de criar um pet está sendo tão incrível que hoje eu decidi adotar meu segundo cahorro, o nome dele é Lion e ele está se dando muito bem com seu coleguinha Rex!",
                 data: Date.dateFromCustomString(customString: "05/05/2020")
             )
         )
