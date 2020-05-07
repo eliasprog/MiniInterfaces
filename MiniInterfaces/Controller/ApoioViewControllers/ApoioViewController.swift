@@ -19,7 +19,7 @@ class ApoioViewController: UIViewController{
 
     
     var contacts: [Contacts] = [] //array de contatos para ser usado na table
-    var msgsApoio: [String] = ["Lembre-se, você não está sozinho, existem pessoas que podem te ajudar", "Você pode conversar com um voluntário do CVV ligando para 188 de todo o território nacional", " A CVV funciona 24 horas todos os dias e de forma gratuita.", "Na CVV você é atendido por um voluntário, com respeitoe anonimato", "Oii, você é lindo"]
+    var msgsApoio: [String] = ["Lembre-se, você não está sozinho, existem pessoas que podem te ajudar", "Você pode conversar com um voluntário do CVV ligando para 188 de todo o território nacional", " A CVV funciona 24 horas todos os dias e de forma gratuita.", "Na CVV você é atendido por um voluntário, com respeito e anonimato", "Oii, você é lindo"]
     
     
     let cellScalling: CGFloat = 0.6

@@ -57,16 +57,16 @@ class CardModel {
                 photo: "violao",
                 feelingColor: feelingBem,
                 title: "Estou aprendendo violão",
-                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…",
+                description: "Hoje começei a estudar música e aprender a tocar violão. Está sendo uma ótima experiência e também está me ajudando a relaxar e controlar a ansiedade.",
                 data: Date.dateFromCustomString(customString: "18/02/2020")
             )
         )
         cardsFromServer.append(
             Card(
-                photo: "dog2",
+                photo: "dog",
                 feelingColor: feelingBem,
                 title: "Meu Segundo Cachorro",
-                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …",
+                description: "A experiência de cria um pet está sendo tão incrível que hoje eu decidi adotar meu segundo cahorro, o nome dele é Lion e ele está se dando muito bem com seu coleguinha Rex!",
                 data: Date.dateFromCustomString(customString: "05/05/2020")
             )
         )
@@ -75,16 +75,16 @@ class CardModel {
                 photo: "cabelo",
                 feelingColor: feelingRadiante,
                 title: "Pintei o cabelo",
-                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…",
+                description: "Hoje eu decidi mudar um pouco e acabei pintando o cabelo.",
                 data: Date.dateFromCustomString(customString: "18/02/2020")
             )
         )
         cardsFromServer.append(
             Card(
-                photo: "dog",
-                feelingColor: feelingNormal,
+                photo: "dog2",
+                feelingColor: feelingRadiante,
                 title: "Meu Primeiro Cachorro",
-                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …",
+                description: "Hoje estou me sentindo radiante pois ganhei meu primeiro pet. Um cachorro, seu nome é Rex e eu estou gostando muito da experiência.",
                 data: Date.dateFromCustomString(customString: "18/02/2020")
             )
         )
