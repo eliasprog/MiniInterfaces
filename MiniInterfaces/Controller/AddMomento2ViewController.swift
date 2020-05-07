@@ -10,6 +10,8 @@ import UIKit
 
 class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITextFieldDelegate {
 
+    @IBOutlet weak var avancarBtn: UIBarButtonItem!
+    
     @IBOutlet weak var addPhotoLbl: UILabel!
     @IBOutlet weak var storyTitleLbl: UILabel!
     @IBOutlet weak var importantMomentLbl: UILabel!
@@ -44,6 +46,7 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
         txtFieldTitle.textColor = .textColor
         txtFieldDescription.textColor = .textColor
         
+        avancarBtn.isEnabled = false
     }
     
     let photoData = [nil, "cabelo", "dog", "dog2", "violao", "dog", "violao"]
@@ -109,6 +112,9 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
         self.performSegue(withIdentifier: "AddMomento3Segue", sender: self)
     }
     
+    var txtFieldTitleIsEnable = false
+    var txtFieldDescriptionIsEnable = false
+    
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         guard let oldValue = textField.text else {
@@ -120,6 +126,10 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
             let newLength = oldValue.count + string.count - range.length
             self.textTitle = oldValue + string
             storyTitleCounter.text =  "\(newLength)/30"
+            
+            if oldValue.count > 0 {
+                self.txtFieldTitleIsEnable = true
+            }
         }
         
         if textField == txtFieldDescription {
@@ -127,6 +137,15 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
             let newLength = oldValue.count + string.count - range.length
             self.textDescription = oldValue + string
             importantMomentCounter.text =  "\(newLength)/110"
+            
+            if oldValue.count > 0 {
+                self.txtFieldDescriptionIsEnable = true
+            }
+            
+        }
+        
+        if self.txtFieldTitleIsEnable && self.txtFieldDescriptionIsEnable {
+            self.avancarBtn.isEnabled = true
         }
         
         return true

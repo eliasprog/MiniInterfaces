@@ -124,6 +124,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addPhotoLbl" destination="twZ-bW-Axo" id="fFe-eK-bga"/>
+                        <outlet property="avancarBtn" destination="CrN-y5-plO" id="0uU-pl-y5B"/>
                         <outlet property="collectionView" destination="lYM-UT-usC" id="hcQ-tV-vLM"/>
                         <outlet property="importantMomentCounter" destination="irp-Un-Gcz" id="WRs-id-fzo"/>
                         <outlet property="importantMomentLbl" destination="2o6-pI-AWr" id="K70-oc-EQq"/>
