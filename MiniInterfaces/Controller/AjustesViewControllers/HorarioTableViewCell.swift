@@ -8,16 +8,21 @@
 
 import UIKit
 
-class HorarioTableViewCell: UITableViewCell {
+class HorarioTableViewCell: UITableViewCell, Horario {
+    
+    func recebeHora(hora: String) {
+        horaLabel.text = hora
+    }
 
     @IBOutlet weak var horarioLabel: UILabel!
     @IBOutlet weak var horaLabel: UILabel!
-    @IBOutlet weak var horarioPickerView: UIDatePicker!
     
     static let xibName = "HorarioCell"
     static let identifier = "horarioCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         horarioLabel.font = sfRounded(size: 17, weight: .regular)
         horarioLabel.textColor = .textColor
         horaLabel.font = sfRounded(size: 17, weight: .regular)

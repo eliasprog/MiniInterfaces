@@ -8,15 +8,31 @@
 
 import UIKit
 
+protocol Horario: class {
+    func recebeHora(hora: String)
+}
+
 class PickerTableViewCell: UITableViewCell {
 
-    static let xibName = "HorarioPickerCell"
+    
+    @IBOutlet weak var horaPickerView: UIDatePicker!
+    
+    static let xibName = "Picker"
     static let identifier = "pickerCell"
+    
+    weak var horas: Horario?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
+    
+    @IBAction func changedPicker(_ sender: Any) {
+        let formater = DateFormatter()
+        formater.dateFormat = "HH:mm"
+        horas?.recebeHora(hora: formater.string(from: horaPickerView.date)) 
+        
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -24,3 +40,4 @@ class PickerTableViewCell: UITableViewCell {
     }
 
 }
+
