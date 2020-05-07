@@ -13,6 +13,7 @@ class PerfilTableViewCell: UITableViewCell {
     @IBOutlet weak var editionButton: UIButton!
     @IBOutlet weak var nomeLabel: UILabel!
     @IBOutlet weak var perfilImage: UIImageView!
+    
     static let xibName = "PerfilCell"
     static let identifier = "perfilCellIdentifier"
    

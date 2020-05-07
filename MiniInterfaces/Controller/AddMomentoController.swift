@@ -47,12 +47,21 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
         return cell
     }
     
+
     var selectedCell: FeelingCardCollectionViewCell? = nil
     var previousSelectedCell: FeelingCardCollectionViewCell? = nil
+    var selectedItem: Int?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is AddMomento2ViewController {
+            let vc = segue.destination as? AddMomento2ViewController
+            vc?.selectedFeeling = data[selectedItem!]
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! FeelingCardCollectionViewCell
-        print(indexPath.item)
+        self.selectedItem = indexPath.item
         
         if selectedCell != previousSelectedCell {
             self.previousSelectedCell = selectedCell
@@ -71,12 +80,6 @@ class AddMomentoController: UIViewController, UICollectionViewDelegate, UICollec
             self.performSegue(withIdentifier: "AddMomento2Segue", sender: self)
         })
         
-
-        
-        
     }
     
-
 }
-
-

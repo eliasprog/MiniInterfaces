@@ -22,6 +22,10 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
     @IBOutlet weak var txtFieldTitle: UITextField!
     @IBOutlet weak var txtFieldDescription: UITextField!
     
+    var selectedFeeling: FeelingCard?
+    var textTitle: String?
+    var textDescription: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         allLblRounded()
@@ -42,19 +46,31 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
         
     }
     
-    let photoData = [nil, "pessoaAleatoria1", "pessoaAleatoria2", "pessoaAleatoria3", "pessoaAleatoria4", "dog", "violao"]
+    let photoData = [nil, "cabelo", "dog", "dog2", "violao", "dog", "violao"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photoData.count
     }
-    
 
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoSelectionCell", for: indexPath) as! PhotoCollectionViewCell
         cell.configure(photoName: photoData[indexPath.row])
         cell.layer.cornerRadius = 5
         return cell
+    }
+    
+    var selectedCell: PhotoCollectionViewCell? = nil
+    var previousSelectedCell: PhotoCollectionViewCell? = nil
+    var selectedItem: Int?
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! PhotoCollectionViewCell
+        self.selectedItem = indexPath.item
+        
+        if selectedCell != previousSelectedCell {
+            self.previousSelectedCell = selectedCell
+            self.selectedCell = cell
+        }
     }
     
     func allLblRounded(){
@@ -73,6 +89,14 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
         importantMomentCounter.textColor = .textColor
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is AddMomento3Controller  {
+            let vc = segue.destination as? AddMomento3Controller
+            
+            vc?.card = Card(photo: self.photoData[self.selectedItem!]!, feelingColor: self.selectedFeeling!, title: self.textTitle!, description: self.textDescription!, data: Date())
+        }
+    }
+    
     @IBAction func btnNext(_ sender: Any) {
         self.performSegue(withIdentifier: "AddMomento3Segue", sender: self)
     }
@@ -86,27 +110,18 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
         if textField == txtFieldTitle {
             if oldValue.count > 29 && range.length <= 0 { return false }
             let newLength = oldValue.count + string.count - range.length
+            self.textTitle = oldValue + string
             storyTitleCounter.text =  "\(newLength)/30"
         }
         
         if textField == txtFieldDescription {
             if oldValue.count > 109 && range.length <= 0 { return false }
             let newLength = oldValue.count + string.count - range.length
+            self.textDescription = oldValue + string
             importantMomentCounter.text =  "\(newLength)/110"
         }
-
         
         return true
     }
-
-    /*
-     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
