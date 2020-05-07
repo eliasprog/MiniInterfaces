@@ -15,9 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-6d-NBg">
-                                <rect key="frame" x="16" y="153" width="242" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK3-6d-NBg">
+                                <rect key="frame" x="17" y="153" width="258" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="3Pf-q7-q18"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="bbB-js-4ia"/>
+                                    <constraint firstAttribute="width" secondItem="fK3-6d-NBg" secondAttribute="height" multiplier="121:34" constant="16" id="rmr-co-S5G"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Como você está se sentindo hoje?">
                                         <attributes>
@@ -29,10 +33,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ukS-hv-GTk">
-                                <rect key="frame" x="17" y="251" width="341" height="248"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ukS-hv-GTk">
+                                <rect key="frame" x="17" y="265" width="341" height="337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ukS-hv-GTk" secondAttribute="height" multiplier="11:8" id="5gp-w5-vLr"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="3" id="QCQ-BT-hHu">
                                     <size key="itemSize" width="109" height="122"/>
                                     <size key="estimatedItemSize" width="109" height="122"/>
@@ -44,6 +50,13 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.96040000000000003" green="0.96366666670000001" blue="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ukS-hv-GTk" firstAttribute="top" secondItem="fK3-6d-NBg" secondAttribute="bottom" constant="44" id="10r-Ci-eYL"/>
+                            <constraint firstItem="fK3-6d-NBg" firstAttribute="top" secondItem="86d-Jl-bGL" secondAttribute="top" constant="13" id="9M4-3e-aV2"/>
+                            <constraint firstItem="fK3-6d-NBg" firstAttribute="leading" secondItem="ukS-hv-GTk" secondAttribute="leading" id="GjV-4Y-h2K"/>
+                            <constraint firstItem="ukS-hv-GTk" firstAttribute="centerX" secondItem="b9m-sj-em2" secondAttribute="centerX" id="cfX-Aw-EMk"/>
+                            <constraint firstItem="fK3-6d-NBg" firstAttribute="leading" secondItem="86d-Jl-bGL" secondAttribute="leading" constant="17" id="mVo-7E-Qar"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="86d-Jl-bGL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Criando Momentos" largeTitleDisplayMode="always" id="Xf7-wF-a39"/>
@@ -56,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wt5-WF-734" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="139"/>
+            <point key="canvasLocation" x="888.79999999999995" y="138.98050974512745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="itn-9Q-9wg">
