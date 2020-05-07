@@ -28,7 +28,8 @@ class AddMomento3Controller: UIViewController {
         photo: "cabelo",
         feelingColor: feelingRadiante,
         title: "Pintei o cabelo",
-        description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf"
+        description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf",
+        data: Date()
         )
         
         collectionView.delegate = self

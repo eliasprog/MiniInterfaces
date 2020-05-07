@@ -13,12 +13,13 @@ class Card {
     let feelingColor: FeelingCard
     let title: String
     let description: String
+    let data: Date
     
-    init(photo: String, feelingColor: FeelingCard, title: String, description: String) {
+    init(photo: String, feelingColor: FeelingCard, title: String, description: String, data: Date) {
         self.photo = photo
         self.feelingColor = feelingColor
         self.title = title
         self.description = description
-        
+        self.data = data
     }
 }

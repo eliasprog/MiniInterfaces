@@ -8,26 +8,38 @@
 
 import Foundation
 
+// Estrutura de cards com datas.
 struct CardsStruct {
     var day: String
     var month: String
-    var year: String
     var cards = [Card]()
     
-    init(day: String, month: String, year: String, cards: [Card]) {
+    init(day: String, month: String, cards: [Card]) {
         self.day = day
         self.month = month
-        self.year = year
         self.cards = cards
+    }
+}
+// Data formatada
+extension Date {
+    static func dateFromCustomString(customString: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        return dateFormatter.date(from: customString) ?? Date()
     }
 }
 
 class CardModel {
     
     static func getAllCards() -> [CardsStruct] {
-        var allCards = [CardsStruct]() // Array de estruturas de cards
-        var cards1 = [Card]() // Lista de cards 1
-        var cards2 = [Card]() // Lista de cards 2
+        // Array de estruturas de cards.
+        var allCards = [CardsStruct]()
+        // Todos os meses de forma abreviada.
+        let meses = [
+            "Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+            "Jul", "Ago", "Set", "Out", "Nov", "Dez",
+        ]
         
         //Feeling
         let feelingRadiante = FeelingCard(color: .radianteColor, name: "Radiante")
@@ -36,48 +48,66 @@ class CardModel {
         //let feelingMal = FeelingCard(color: .malColor, name: "Mal")
         //let feelingHorrivel = FeelingCard(color: .horrivelColor, name: "Horrivel")
         //let feelingAnsioso = FeelingCard(color: .ansiosoColor, name: "Ansioso")
-        // -----------------------------------
-        let card1 = Card(
-            photo: "dog",
-            feelingColor: feelingNormal,
-            title: "Meu Primeiro Cachorro",
-            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …"
-        )
         
-        let card2 = Card(
-            photo: "violao",
-            feelingColor: feelingBem,
-            title: "Estou aprendendo violão",
-            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…"
-        )
-        // -----------------------------------
+        // Cards
+        let cardsFromServer = [
+            Card(
+                photo: "violao",
+                feelingColor: feelingBem,
+                title: "Estou aprendendo violão",
+                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…",
+                data: Date.dateFromCustomString(customString: "18/02/2020")
+            ),
+            Card(
+                photo: "dog2",
+                feelingColor: feelingBem,
+                title: "Meu Segundo Cachorro",
+                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …",
+                data: Date.dateFromCustomString(customString: "05/05/2020")
+            ),
         
-        let card3 = Card(
-            photo: "dog2",
-            feelingColor: feelingBem,
-            title: "Meu Segundo Cachorro",
-            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …"
-        )
+            Card(
+                photo: "cabelo",
+                feelingColor: feelingRadiante,
+                title: "Pintei o cabelo",
+                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…",
+                data: Date()
+            ),
+            Card(
+                photo: "dog",
+                feelingColor: feelingNormal,
+                title: "Meu Primeiro Cachorro",
+                description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf …",
+                data: Date.dateFromCustomString(customString: "18/02/2020")
+            )
+        ]
+        // Fim Cards
         
-        let card4 = Card(
-            photo: "cabelo",
-            feelingColor: feelingRadiante,
-            title: "Pintei o cabelo",
-            description: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will…"
-        )
+        // Agrupa por data os card em um dicionario.
+        let groupedCards = Dictionary(grouping: cardsFromServer) { (element) -> Date in
+            return element.data
+        }
+        // Ordena os cards
+        let sortedKeys = groupedCards.keys.sorted().reversed()
         
-        // -----------------------------------
-        cards1.append(card1)
-        cards1.append(card2)
-        cards2.append(card3)
-        cards2.append(card4)
-        
-        let cardsStruct1 = CardsStruct(day: "01", month: "Jan", year: "2020", cards: cards1)
-        let cardsStruct2 = CardsStruct(day: "25", month: "Abr", year: "2020", cards: cards2)
-        // Montando struct
-        allCards.append(cardsStruct1)
-        allCards.append(cardsStruct2)
-        
+        /**
+         * Separa cada grupo em um array
+         * Coloca na estrutura de cards com dia e mes.
+         */
+        sortedKeys.forEach { (key) in
+            let values = groupedCards[key]
+            
+            let components = Calendar.current.dateComponents([Calendar.Component.day, Calendar.Component.month], from: key)
+            
+            let cardStruct = CardsStruct(
+                day: String(components.day!),
+                month: meses[(components.month! - 1)],
+                cards: values ?? []
+            )
+            
+            allCards.append(cardStruct)
+        }
+        // Retorna a estrutura montada com todos os cards
         return allCards
     }
 }
