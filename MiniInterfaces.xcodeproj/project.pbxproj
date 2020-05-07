@@ -101,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				03D9081F2459A88300F9839C /* Card.swift */,
+				DE44727D245DF84E0007A1C6 /* CardModel.swift */,
 				03D908202459A88300F9839C /* Contacts.swift */,
 				03D908222459A88300F9839C /* FeelingCard.swift */,
-				DE44727D245DF84E0007A1C6 /* CardModel.swift */,
 				03D908212459A88300F9839C /* User.swift */,
 			);
 			name = Model;
