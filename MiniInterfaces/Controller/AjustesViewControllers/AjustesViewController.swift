@@ -18,6 +18,7 @@ class AjustesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.textColor, .font: sfRounded(size: 34, weight: .semibold)]
         ajustesTableView.backgroundColor = .backgroundColor
         self.view.backgroundColor = .backgroundColor
         self.view.insertSubview(UIView(frame: .zero), at: 0)
