@@ -93,7 +93,15 @@ class AddMomento2ViewController: UIViewController, UICollectionViewDataSource, U
         if segue.destination is AddMomento3Controller  {
             let vc = segue.destination as? AddMomento3Controller
             
-            vc?.card = Card(photo: self.photoData[self.selectedItem!]!, feelingColor: self.selectedFeeling!, title: self.textTitle!, description: self.textDescription!, data: Date())
+            // Formata a data.
+            let now = Date() //agora
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy"
+            let nowString = dateFormatter.string(from: now)
+            let nowSemHora = dateFormatter.date(from: nowString)
+            
+            // Monta o card
+            vc?.card = Card(photo: self.photoData[self.selectedItem!]!, feelingColor: self.selectedFeeling!, title: self.textTitle!, description: self.textDescription!, data: nowSemHora!)
         }
     }
     

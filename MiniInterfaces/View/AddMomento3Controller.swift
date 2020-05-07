@@ -15,14 +15,15 @@ class AddMomento3Controller: UIViewController {
     var card: Card?
     
     @IBAction func saveAndClose(_ sender: Any) {
+        CardModel.saveCard(card: self.card!)
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is MomentosController {
-           
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.destination is MomentosController {
+//
+//        }
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
